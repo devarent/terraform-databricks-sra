@@ -1,4 +1,38 @@
 
+<!-- identity-block -->
+<div align="center">
+
+# terraform-databricks-sra
+
+<sub>Terraform Security Reference Architecture for deploying secure Databricks workspaces.</sub>
+
+</div>
+
+## At a glance
+
+| Field | Detail |
+| --- | --- |
+| Repository | terraform-databricks-sra |
+| Primary language | HCL |
+| Topics | cloud, databricks, infrastructure, security, terraform |
+| License | NOASSERTION |
+| Branch | main |
+| Maintainer | [@devarent](https://github.com/devarent) |
+
+## Overview
+
+terraform-databricks-sra is a hands-on repository focused on: Terraform Security Reference Architecture for deploying secure Databricks workspaces.. Primary language: HCL. Topics: cloud, databricks, infrastructure, security, terraform. The README below documents the project; use the table above for a quick overview.
+
+### Global references
+
+<div align="center">
+
+🇮🇸 Iceland &middot; 🇳🇿 New Zealand &middot; 🇨🇭 Switzerland &middot; 🇸🇮 Slovenia &middot; 🇮🇪 Ireland &middot; 🇦🇹 Austria &middot; 🇵🇹 Portugal &middot; 🇸🇬 Singapore &middot; 🇫🇮 Finland
+
+</div>
+
+---
+
 <!-- dbx-style-kit -->
 <div align="center">
 
