@@ -1,3 +1,4 @@
+// Modified in the devarent fork, 2026-11-22: use a published static favicon asset.
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -7,7 +8,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'SRA',
   tagline: 'Security Reference Architecture (SRA) with Terraform templates makes deploying workspaces with Security Best Practices easy.',
-  favicon: 'terraform-databricks-sra/docs/sra/src/img/primary-icon-orange-cloud-security-3291x3220-fa69bde.png',
+  favicon: 'img/primary-icon-orange-cloud-security.svg',
 
   url: 'https://databricks.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served

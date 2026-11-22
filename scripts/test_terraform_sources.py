@@ -125,6 +125,34 @@ class WorkflowContractTests(unittest.TestCase):
             self.assertTrue(all(arg.startswith('-filter=tests/mock_plan') for arg in args))
             self.assertNotIn('integration.tftest.hcl', inputs['terraform_test_args'])
 
+    def test_reusable_jobs_are_bounded_and_noninteractive(self):
+        doc = self.load('terraform-ruw.yml')
+        self.assertEqual(doc['permissions'], {'contents': 'read'})
+        self.assertEqual(doc['env']['TF_INPUT'], 'false')
+        for job in doc['jobs'].values():
+            self.assertEqual(job['timeout-minutes'], '30')
+        steps = doc['jobs']['terraform-test']['steps']
+        self.assertIn('terraform init -input=false', [step.get('run') for step in steps])
+        cache = next(step for step in steps if step.get('name') == 'Cache Terraform Providers')
+        self.assertIn('${{ runner.arch }}', cache['with']['key'])
+
+    def test_docs_workflow_checks_build_without_deploying(self):
+        doc = self.load('docs-test-deploy.yml')
+        for event in ('push', 'pull_request'):
+            self.assertIn('docs/sra/**', doc['on'][event]['paths'])
+            self.assertIn('scripts/check_docs_assets.py', doc['on'][event]['paths'])
+        self.assertEqual(doc['permissions'], {'contents': 'read'})
+        job = doc['jobs']['test-deploy']
+        self.assertEqual(job['timeout-minutes'], '15')
+        steps = job['steps']
+        setup = next(step for step in steps if step.get('uses', '').startswith('actions/setup-node@'))
+        self.assertEqual(setup['with']['node-version'], '22')
+        commands = '\n'.join(step.get('run', '') for step in steps)
+        for required in ('yarn@1.22.22', '--frozen-lockfile', '--ignore-scripts', 'yarn typecheck', 'yarn build', 'check_docs_assets.py'):
+            self.assertIn(required, commands)
+        self.assertNotIn('yarn deploy', commands)
+        self.assertFalse(any('deploy-pages' in step.get('uses', '') for step in steps))
+
     def test_maintenance_covers_hcl_and_installs_parser(self):
         doc = self.load('maintenance-checks.yml')
         for event in ('push', 'pull_request'):

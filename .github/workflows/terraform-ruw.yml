@@ -1,3 +1,4 @@
+# Modified in the devarent fork, 2026-11-22: bounded/non-interactive jobs and architecture-aware caches.
 on:
   # This makes the workflow reusable. It is not meant to be executed independently of a calling workflow.
   workflow_call:
@@ -83,12 +84,20 @@ on:
         required: false
         description: Should terraform validate run before terraform test? terraform test does not validate configurations that have no test files
 
+permissions:
+  contents: read
+
+env:
+  TF_IN_AUTOMATION: "true"
+  TF_INPUT: "false"
+
 jobs:
   # TFLint Job
   tflint:
     environment: ${{ inputs.environment }}
     if: inputs.tflint_enabled
     runs-on: ${{ inputs.runs_on }}
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         name: Checkout source code
@@ -97,7 +106,7 @@ jobs:
         name: Cache TFLint Plugins
         with:
           path: ~/.tflint.d/plugins
-          key: tflint-${{ runner.os }}-${{ hashFiles('**/.tflint.hcl') }}
+          key: tflint-${{ runner.os }}-${{ runner.arch }}-${{ inputs.tflint_version }}-${{ hashFiles('**/.tflint.hcl') }}
       - uses: terraform-linters/setup-tflint@v4
         name: Setup TFLint
         with:
@@ -117,6 +126,7 @@ jobs:
   terraform-fmt:
     environment: ${{ inputs.environment }}
     runs-on: ${{ inputs.runs_on }}
+    timeout-minutes: 30
     if: inputs.terraform_fmt_enabled
     steps:
       - uses: actions/checkout@v4
@@ -133,6 +143,7 @@ jobs:
   terraform-test:
     environment: ${{ inputs.environment }}
     runs-on: ${{ inputs.runs_on }}
+    timeout-minutes: 30
     if: inputs.terraform_test_enabled
     # This environment variable sets the plugin cache dir for Terraform, and is also used to configure a cache directory
     env:
@@ -152,10 +163,10 @@ jobs:
           path: ${{ env.TF_PLUGIN_CACHE_DIR }}
           # The cache key includes the OS, working directory, and a hash of all versions.tf in the repo.
           # A change to any of these will cause a new cache to be created (or reused if it exists)
-          key: terraform-providers-${{ runner.os }}-${{ inputs.working_directory }}-${{ hashFiles('**/versions.tf') }}
+          key: terraform-providers-${{ runner.os }}-${{ runner.arch }}-${{ inputs.working_directory }}-${{ hashFiles('**/versions.tf') }}
           restore-keys:
-            terraform-providers-${{ runner.os }}-${{ inputs.working_directory }}-
-            terraform-providers-${{ runner.os }}-
+            terraform-providers-${{ runner.os }}-${{ runner.arch }}-${{ inputs.working_directory }}-
+            terraform-providers-${{ runner.os }}-${{ runner.arch }}-
       - name: List plugin cache contents
         run: ls -R ${{ env.TF_PLUGIN_CACHE_DIR }}
       - uses: hashicorp/setup-terraform@v3
@@ -163,7 +174,7 @@ jobs:
         with:
           terraform_version: ${{ inputs.terraform_version }}
       - name: terraform init
-        run: terraform init
+        run: terraform init -input=false
         working-directory: ${{ inputs.working_directory }}
       - name: terraform validate
         if: inputs.terraform_validate_enabled

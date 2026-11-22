@@ -1,30 +1,49 @@
-name: Docs test deployment
+# Modified in the devarent fork, 2026-11-22: build/typecheck/asset checks only, no deployment.
+name: Documentation checks
+
+on:
+  push:
+    paths:
+      - 'docs/sra/**'
+      - 'scripts/check_docs_assets.py'
+      - '.github/workflows/docs-test-deploy.yml'
+  pull_request:
+    paths:
+      - 'docs/sra/**'
+      - 'scripts/check_docs_assets.py'
+      - '.github/workflows/docs-test-deploy.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
 
 defaults:
   run:
-    working-directory: 'docs/sra'
-
-on:
-  pull_request:
-    paths:
-      - 'docs/**'
-      - '.github/workflows/docs-test-deploy.yml'
+    working-directory: docs/sra
 
 jobs:
   test-deploy:
-    name: Test deployment
+    name: Typecheck and build documentation
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
-          node-version: 20
-          cache: yarn
-          cache-dependency-path: 'docs/sra/yarn.lock'
-
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      - name: Test build website
+          node-version: 22
+      - name: Install pinned Yarn Classic
+        run: npm install --global yarn@1.22.22 --ignore-scripts --registry=https://registry.npmjs.org
+      - name: Install locked dependencies without lifecycle scripts
+        run: yarn install --frozen-lockfile --ignore-scripts --non-interactive --registry https://registry.npmjs.org
+      - name: Check TypeScript
+        run: yarn typecheck
+      - name: Build documentation
         run: yarn build
+      - name: Check published local assets
+        working-directory: .
+        run: python3 scripts/check_docs_assets.py

@@ -97,7 +97,40 @@ Results after implementation:
   only `delegate_from[0]` despite an empty-list default. This change documents those
   risks; changing key behavior or IAM resource addressing needs a separate migration
   and native/provider test plan, not a silent bulk edit.
-- Documentation-site build, Docker/Kubernetes runtime tests and full provider/schema
-  validation still require their toolchains and suitable environments.
+- Docker/Kubernetes runtime tests and full provider/schema validation still require
+  suitable environments. The documentation-site build was subsequently verified below.
 - The 79-repo source audit and five external patch proposals remain separate from
   these applied changes. No claim is made that all repositories are repaired.
+
+## Subsequent documentation and CI checks — 2026-11-22
+
+The earlier 46-test result above describes the previous increment, not the current
+suite. This increment adds documentation build coverage and bounded workflow jobs:
+
+- Node engine minimum aligned to installed Docusaurus (>=20); CI uses Node 22 and
+  explicit Yarn 1.22.22. Lockfile registry hosts changed to npm without changing
+  dependency versions or integrity hashes. Frozen install with scripts disabled passed.
+- Real `yarn typecheck` and `yarn build` passed on Node 22.22.3. Search indexed 21 docs.
+- Fixed an incorrect favicon path that the production build did not reject. A new
+  asset checker reproduced 23 missing favicon references before the fix, then checked
+  23 HTML files / 171 local references with zero errors after rebuilding.
+- Docs CI now runs on relevant pushes as well as PRs; it checks types, build and
+  generated local assets, uses read-only permissions and a 15-minute timeout, and
+  pins its checkout/setup-node actions to verified v6 commit SHAs. No Pages deploy.
+- Reusable Terraform jobs now have 30-minute timeouts, explicit noninteractive mode,
+  read-only permissions and architecture-separated provider/TFLint caches. Existing
+  cloud mock-test filters remain unchanged; no live integration tests enabled.
+- Local offline suite now contains **57 tests**. HCL scope remains **273 sources /
+  35 local module calls**. Local native Terraform CLI remains unavailable.
+
+The previously pending Azure run completed successfully:
+[Azure 45011467437](https://github.com/devarent/terraform-databricks-sra/actions/runs/45011467437).
+AWS [45011467337](https://github.com/devarent/terraform-databricks-sra/actions/runs/45011467337)
+and AWS Customizations
+[45011467379](https://github.com/devarent/terraform-databricks-sra/actions/runs/45011467379)
+also succeeded. These runs tested commit `c04c301`, **not this new increment**.
+They do not certify GCP, live deployment or the other 79 audited repositories.
+
+Reproduction commands, known nonfatal warnings and checker limitations are in
+[the documentation-site README](sra/README.md). Dependency upgrades, Docusaurus type
+alignment/deprecation migration and browser/runtime validation remain separate work.

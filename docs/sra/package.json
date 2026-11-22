@@ -54,8 +54,10 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
+    "node": ">=20.0"
   },
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@1.22.22",
+  "description": "Databricks SRA documentation; devarent fork runtime/build maintenance (2026-11-22)."
 }

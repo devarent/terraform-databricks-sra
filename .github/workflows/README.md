@@ -175,3 +175,16 @@ jobs:
       working_directory: azure/tf
       tflint_args: "--config=$(pwd)/.tflint.hcl" #This causes TFLint to reuse the same .tflint.hcl file for every subdirectory
 ```
+
+## Fork CI safeguards (2026-11-22)
+
+The reusable Terraform workflow grants `contents: read`, sets `TF_INPUT=false` and
+`TF_IN_AUTOMATION=true`, and bounds each job to 30 minutes. Provider caches include
+runner architecture; TFLint caches also include its requested version. Current cloud
+callers retain their existing test filters; these safeguards do not enable live tests.
+
+`docs-test-deploy.yml` is a **build-only** workflow despite its historical filename.
+It checks the documentation on pushes/PRs with Node 22 and pinned Yarn 1.22.22:
+frozen installation without lifecycle scripts, TypeScript, production build and local
+asset validation. It has read-only permissions and a 15-minute timeout. Pages remains
+disabled. See [documentation build instructions](../../docs/sra/README.md).
