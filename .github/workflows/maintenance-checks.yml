@@ -1,0 +1,52 @@
+name: Maintenance checks
+
+on:
+  push:
+    paths:
+      - 'scripts/**'
+      - 'docs/REPO-ATLAS.*'
+      - 'docs/AUDIT-*.md'
+      - 'docs/CODE-AUDIT*'
+      - 'docs/audit-patches/**'
+      - 'docs/portfolio/**'
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+      - '.gitignore'
+      - '.github/workflows/maintenance-checks.yml'
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'docs/REPO-ATLAS.*'
+      - 'docs/AUDIT-*.md'
+      - 'docs/CODE-AUDIT*'
+      - 'docs/audit-patches/**'
+      - 'docs/portfolio/**'
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+      - '.gitignore'
+      - '.github/workflows/maintenance-checks.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: maintenance-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  offline-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Install parser test dependency
+        run: |
+          python3 -m venv .venv
+          .venv/bin/pip install --disable-pip-version-check -r scripts/requirements-code-audit.txt
+      - name: Audit-tool regression tests and snapshot consistency (no remote API calls)
+        run: |
+          .venv/bin/python -m unittest discover -s scripts -p 'test_*.py' -v
+          bash -n scripts/audit-repos.sh scripts/validate.sh
+          git diff --check

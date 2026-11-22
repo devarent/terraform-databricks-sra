@@ -1,0 +1,10 @@
+--- a/examples/01_heartbeat.sh
++++ b/examples/01_heartbeat.sh
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env bash
+ set -euo pipefail
+-curl -sS http://localhost:8000/api/v2/heartbeat || \
+-  curl -sS http://localhost:8000/api/v1/heartbeat
++curl -fsS http://localhost:8000/api/v2/heartbeat || \
++  curl -fsS http://localhost:8000/api/v1/heartbeat
+ echo

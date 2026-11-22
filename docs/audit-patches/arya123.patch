@@ -1,0 +1,8 @@
+--- a/UTS-EC2-WebHosting/ansible/deploy-static-apache.yml
++++ b/UTS-EC2-WebHosting/ansible/deploy-static-apache.yml
+@@ -62,4 +62,3 @@
+     - name: Show deployment result
+       debug:
+         msg: "Website deployed! Apache2 status: {{ apache_status.stdout }}. Access via http://{{ ansible_host }}"
+-EOF
+\ No newline at end of file

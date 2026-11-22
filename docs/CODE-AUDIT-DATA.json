@@ -1,0 +1,2468 @@
+{
+  "fetched_at": "2026-11-22T09:48:23.935328+00:00",
+  "method": "commit-pinned archive; Python AST, strict JSON, PyYAML safe loader, bash -n, workflow/Compose patterns; oversized archives: up to 120 source/config blobs from commit-pinned Git tree",
+  "limits": {
+    "archive_bytes": 83886080,
+    "expanded_bytes": 314572800,
+    "file_bytes": 1048576,
+    "excluded_dirs": [
+      ".git",
+      ".venv",
+      "__pycache__",
+      "build",
+      "dist",
+      "node_modules",
+      "target",
+      "vendor",
+      "venv"
+    ]
+  },
+  "warning": "Candidates need triage; no build/runtime/dependency-vulnerability tests. Text read without a parser is not validated.",
+  "repositories": [
+    {
+      "name": "amazon-linux-ami-kernel",
+      "full_name": "devarent/amazon-linux-ami-kernel",
+      "commit": "d75b09437b953a86581f365d82da003905657a8d",
+      "files_seen": 29,
+      "text_files_read": 24,
+      "bytes_read": 97048,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "strict_json": 2,
+        "bash_syntax": 5
+      },
+      "skipped": {
+        "non_regular_member": 12,
+        "read_but_no_parser_for_language": 15,
+        "unsupported_extension": 5
+      },
+      "findings": [
+        {
+          "path": "iac/cloudformation/al2023-stack.yaml",
+          "line": 59,
+          "rule": "yaml-parse",
+          "detail": "YAML loader rejected document; custom tags/dialect may need native tooling"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "apache-kafka-lab",
+      "full_name": "devarent/apache-kafka-lab",
+      "commit": "7ac2896330d910bd22d754adbb0892542d441296",
+      "files_seen": 9,
+      "text_files_read": 6,
+      "bytes_read": 6140,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1,
+        "bash_syntax": 3
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "apache-kylin-lab",
+      "full_name": "devarent/apache-kylin-lab",
+      "commit": "a400ce25e067d683194bfbd09361370128b6d495",
+      "files_seen": 8,
+      "text_files_read": 5,
+      "bytes_read": 5811,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "arya123",
+      "full_name": "devarent/arya123",
+      "commit": "d144474c8db891bddee5aad898f76bc6a5abab49",
+      "files_seen": 427,
+      "text_files_read": 327,
+      "bytes_read": 1777515,
+      "checks": {
+        "yaml_safe_load": 44,
+        "workflow_patterns": 3,
+        "bash_syntax": 48,
+        "compose_patterns": 4,
+        "strict_json": 8,
+        "yaml_template_skipped": 16,
+        "python_ast": 3
+      },
+      "skipped": {
+        "non_regular_member": 119,
+        "unsupported_extension": 100,
+        "read_but_no_parser_for_language": 208
+      },
+      "findings": [
+        {
+          "path": "LAB/03-DOCKER/docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service web: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "LAB/03-DOCKER/docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service localstack: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "LAB/04-TERRAFORM/localstack/docker-compose.yaml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service localstack: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "UTS-EC2-WebHosting/ansible/deploy-static-apache.yml",
+          "line": 65,
+          "rule": "yaml-parse",
+          "detail": "YAML loader rejected document; custom tags/dialect may need native tooling"
+        },
+        {
+          "path": "UTS-EC2-WebHosting/docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service nginx: published port lacks loopback binding; review local-only lab threat model"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "assembler-addressing-modes-lab",
+      "full_name": "devarent/assembler-addressing-modes-lab",
+      "commit": "5cb5cd599d6ecbb14e11847c45f401c39446e32b",
+      "files_seen": 15,
+      "text_files_read": 8,
+      "bytes_read": 24120,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "read_but_no_parser_for_language": 7,
+        "unsupported_extension": 7
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "aws-billing-qwen-3-32b",
+      "full_name": "devarent/aws-billing-qwen-3-32b",
+      "commit": "f5e6ade8c2701389d1a401bbf30be217abde5d6e",
+      "files_seen": 147,
+      "text_files_read": 113,
+      "bytes_read": 942652,
+      "checks": {
+        "yaml_safe_load": 8,
+        "workflow_patterns": 1,
+        "strict_json": 15,
+        "bash_syntax": 5,
+        "python_ast": 10,
+        "compose_patterns": 1,
+        "yaml_template_skipped": 6
+      },
+      "skipped": {
+        "non_regular_member": 40,
+        "unsupported_extension": 34,
+        "read_but_no_parser_for_language": 69
+      },
+      "findings": [
+        {
+          "path": ".vscode/launch.json",
+          "line": 19,
+          "rule": "json-syntax",
+          "detail": "Invalid control character at; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service ai-billing-hub: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service billing-phpmyadmin: published port lacks loopback binding; review local-only lab threat model"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "aws-ec2-web-hosting-part-1",
+      "full_name": "devarent/aws-ec2-web-hosting-part-1",
+      "commit": "f672325e2b726ba884c0aa169d0734116ebd5692",
+      "files_seen": 162,
+      "text_files_read": 140,
+      "bytes_read": 795983,
+      "checks": {
+        "yaml_safe_load": 16,
+        "workflow_patterns": 3,
+        "strict_json": 3,
+        "python_ast": 3,
+        "compose_patterns": 1,
+        "yaml_template_skipped": 8,
+        "bash_syntax": 15
+      },
+      "skipped": {
+        "non_regular_member": 43,
+        "unsupported_extension": 22,
+        "read_but_no_parser_for_language": 95
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "aws-rds",
+      "full_name": "devarent/aws-rds",
+      "commit": "0746fc97342ad513bc9b921c577eeee97933dc44",
+      "files_seen": 7621,
+      "text_files_read": 10,
+      "bytes_read": 29243,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1
+      },
+      "skipped": {
+        "unsupported_extension": 10,
+        "dependency_or_generated_dir": 7600,
+        "over_1_MiB": 1,
+        "source_outside_120_file_sample": 0,
+        "read_but_no_parser_for_language": 9
+      },
+      "findings": [],
+      "errors": [],
+      "method": "tree-sample (archive exceeded cap)",
+      "tree_truncated": false,
+      "sampled_paths": [
+        ".github/workflows/ci.yml",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "README.md",
+        "SECURITY.md",
+        "mysql.php",
+        ".github/PULL_REQUEST_TEMPLATE.md",
+        "aws/README.md",
+        ".github/ISSUE_TEMPLATE/bug_report.md",
+        ".github/ISSUE_TEMPLATE/feature_request.md"
+      ]
+    },
+    {
+      "name": "backend-service-2026",
+      "full_name": "devarent/backend-service-2026",
+      "commit": "db64855bd2ee9ef9b4dac5598b337f2f2d146b8b",
+      "files_seen": 83,
+      "text_files_read": 71,
+      "bytes_read": 191445,
+      "checks": {
+        "yaml_safe_load": 23,
+        "workflow_patterns": 2,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 42,
+        "unsupported_extension": 12,
+        "read_but_no_parser_for_language": 48
+      },
+      "findings": [
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service postgres: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service redis: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service app: published port lacks loopback binding; review local-only lab threat model"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "bigquery-lab",
+      "full_name": "devarent/bigquery-lab",
+      "commit": "131ce37c04dbebd594313be4b88337c8abbcbfd5",
+      "files_seen": 9,
+      "text_files_read": 6,
+      "bytes_read": 6216,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1,
+        "python_ast": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "cassandra-lab",
+      "full_name": "devarent/cassandra-lab",
+      "commit": "eb0855eecde48d9e1ca0874946844dfb34474995",
+      "files_seen": 8,
+      "text_files_read": 5,
+      "bytes_read": 6086,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "chromadb-lab",
+      "full_name": "devarent/chromadb-lab",
+      "commit": "66b53871a4031843d8235d250ac94a679b03cb67",
+      "files_seen": 8,
+      "text_files_read": 5,
+      "bytes_read": 5732,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1,
+        "bash_syntax": 1,
+        "python_ast": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "cnn",
+      "full_name": "devarent/cnn",
+      "commit": "ddb14c3916cff43d44bcf87fb965803f4ef5ec5b",
+      "files_seen": 447,
+      "text_files_read": 28,
+      "bytes_read": 231470,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "python_ast": 13
+      },
+      "skipped": {
+        "non_regular_member": 25,
+        "read_but_no_parser_for_language": 13,
+        "unsupported_extension": 418,
+        "over_1_MiB": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "cockroachdb-lab",
+      "full_name": "devarent/cockroachdb-lab",
+      "commit": "e9946bac54f4269a56341ecb6fc88c2cfbeade69",
+      "files_seen": 8,
+      "text_files_read": 5,
+      "bytes_read": 23386,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "convolutional-neural-network",
+      "full_name": "devarent/convolutional-neural-network",
+      "commit": "17e686d1f1ab7ad4820ebd8c4204ec88ed6378af",
+      "files_seen": 447,
+      "text_files_read": 28,
+      "bytes_read": 231546,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "python_ast": 13
+      },
+      "skipped": {
+        "non_regular_member": 25,
+        "read_but_no_parser_for_language": 13,
+        "unsupported_extension": 418,
+        "over_1_MiB": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "credit-card-fraud",
+      "full_name": "devarent/credit-card-fraud",
+      "commit": "56cabf201844ed98b5f2fc9dad7d47425097b662",
+      "files_seen": 16,
+      "text_files_read": 9,
+      "bytes_read": 24969,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 7,
+        "read_but_no_parser_for_language": 8
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "database-labs",
+      "full_name": "devarent/database-labs",
+      "commit": "b0c22b91a679c64a8524d5a637e18d5923934449",
+      "files_seen": 11,
+      "text_files_read": 6,
+      "bytes_read": 34500,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "strict_json": 1,
+        "python_ast": 2
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 5,
+        "read_but_no_parser_for_language": 2
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "database-labs-demo",
+      "full_name": "devarent/database-labs-demo",
+      "commit": "84ab5618104e14b51f4f430c6a00e13ebf918a5d",
+      "files_seen": 27,
+      "text_files_read": 14,
+      "bytes_read": 42686,
+      "checks": {
+        "yaml_safe_load": 3,
+        "workflow_patterns": 1,
+        "python_ast": 6,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 9,
+        "unsupported_extension": 13,
+        "read_but_no_parser_for_language": 5
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "databend-lab",
+      "full_name": "devarent/databend-lab",
+      "commit": "5ddcec42da5e5df85ea402432632d7ec25554c99",
+      "files_seen": 8,
+      "text_files_read": 5,
+      "bytes_read": 5235,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "databricks-sql-lab",
+      "full_name": "devarent/databricks-sql-lab",
+      "commit": "d12b163fb5a0e2398699df7c07a9d8b8cb5dffe3",
+      "files_seen": 7,
+      "text_files_read": 4,
+      "bytes_read": 22928,
+      "checks": {},
+      "skipped": {
+        "non_regular_member": 3,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 4
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "dbx",
+      "full_name": "devarent/dbx",
+      "commit": "363ab9a4c1856cc18cf2d87ab8bec6e2fdfd82c5",
+      "files_seen": 8481,
+      "text_files_read": 120,
+      "bytes_read": 1642638,
+      "checks": {
+        "yaml_safe_load": 43,
+        "workflow_patterns": 36,
+        "strict_json": 9,
+        "compose_patterns": 1,
+        "python_ast": 3,
+        "bash_syntax": 1
+      },
+      "skipped": {
+        "unsupported_extension": 1911,
+        "over_1_MiB": 14,
+        "dependency_or_generated_dir": 293,
+        "source_outside_120_file_sample": 6143,
+        "read_but_no_parser_for_language": 64
+      },
+      "findings": [
+        {
+          "path": "deploy/docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service dbx: published port lacks loopback binding; review local-only lab threat model"
+        }
+      ],
+      "errors": [],
+      "method": "tree-sample (archive exceeded cap)",
+      "tree_truncated": false,
+      "sampled_paths": [
+        ".github/workflows/1panel-appstore.yml",
+        ".github/workflows/agents-release.yml",
+        ".github/workflows/cache-keepalive.yml",
+        ".github/workflows/cancel-superseded-ci.yml",
+        ".github/workflows/ci.yml",
+        ".github/workflows/contributors.yml",
+        ".github/workflows/daily-beta-release.yml",
+        ".github/workflows/database-environments.yml",
+        ".github/workflows/docker-dev.yml",
+        ".github/workflows/dockerhub-description.yml",
+        ".github/workflows/docs.yml",
+        ".github/workflows/fnos-package.yml",
+        ".github/workflows/i18n-autofill.yml",
+        ".github/workflows/issue-claim.yml",
+        ".github/workflows/issue-database-label.yml",
+        ".github/workflows/mcp-release.yml",
+        ".github/workflows/notify.yml",
+        ".github/workflows/plugin-cli-release.yml",
+        ".github/workflows/plugin-dev-host.yml",
+        ".github/workflows/plugin-release-reusable.yml",
+        ".github/workflows/publish-packages.yml",
+        ".github/workflows/pull-request-labels.yml",
+        ".github/workflows/release.yml",
+        ".github/workflows/rollback-docker-latest.yml",
+        ".github/workflows/rollback-update-channel.yml",
+        ".github/workflows/similar-issues-backfill.yml",
+        ".github/workflows/similar-issues.yml",
+        ".github/workflows/spam-comment-guard.yml",
+        ".github/workflows/sqlserver2000-windows-user-test.yml",
+        ".github/workflows/sync-changelog.yml",
+        ".github/workflows/sync-cnb-release-assets.yml",
+        ".github/workflows/sync-mirrors.yml",
+        ".github/workflows/ui-preview.yml",
+        ".github/workflows/update-nix-pnpm-hash.yml",
+        ".github/workflows/vsign-operator-bootstrap.yml",
+        ".github/workflows/windows-diagnostic.yml",
+        ".oxfmtrc.json",
+        "CONTRIBUTING.md",
+        "CONTRIBUTING.zh-CN.md",
+        "Cargo.toml",
+        "Makefile",
+        "README-NIX.md",
+        "README.md",
+        "README.pl-PL.md",
+        "README.zh-CN.md",
+        "SECURITY.md",
+        "clippy.toml",
+        "handoff.md",
+        "package.json",
+        "pnpm-lock.yaml",
+        "pnpm-workspace.yaml",
+        "renovate.json",
+        "rustfmt.toml",
+        "vitest.config.ts",
+        ".cargo/config.toml",
+        ".github/FUNDING.yml",
+        ".github/pull_request_template.md",
+        "agents/README.md",
+        "agents/README.zh-CN.md",
+        "agents/versions.json",
+        "apps/README.md",
+        "crates/ARCHITECTURE.md",
+        "crates/README.md",
+        "deploy/Dockerfile",
+        "deploy/NAVICAT_HTTP_TUNNEL.md",
+        "deploy/dbx_tunnel.php",
+        "deploy/docker-compose.release.yml",
+        "deploy/docker-compose.yml",
+        "docs/CONTRIBUTORS.md",
+        "docs/backend-error-handling.md",
+        "docs/background-database-backups.md",
+        "docs/data-grid-copy-formats.md",
+        "docs/data-security-migration.md",
+        "docs/data-security-migration.zh-CN.md",
+        "docs/database-object-dependencies.md",
+        "docs/global-search-workbench-design.md",
+        "docs/grid-original-text-copy.md",
+        "docs/home-page-privacy.md",
+        "docs/local-development-guide.zh-CN.md",
+        "docs/mcp-capability-navigation-validation.md",
+        "docs/mcp-capability-platform-design.md",
+        "docs/mcp-management-layout-redesign.md",
+        "docs/mongo-index-management.md",
+        "docs/mongodb-database-dump-restore.md",
+        "docs/mongodb-database-restore-streaming.md",
+        "docs/mongodb-database-restore-v2.md",
+        "docs/mq-quick-start.md",
+        "docs/mqtt-console-optimization-requirements.md",
+        "docs/mqtt-issues-fix-plan.md",
+        "docs/next-env.d.ts",
+        "docs/package.json",
+        "docs/pg-error-position-locate-plan.md",
+        "docs/pg-partition-table-plan.md",
+        "docs/pnpm-lock.yaml",
+        "docs/pnpm-workspace.yaml",
+        "docs/quick-search-plan.md",
+        "docs/salesforce-soql-integration-spec.md",
+        "docs/source.config.ts",
+        "docs/sqlserver-manual-transactions-7542.md",
+        "docs/tab-multi-window-preview-requirements.md",
+        "docs/table-column-copy.md",
+        "docs/table-import-live-benchmark.md",
+        "docs/tsconfig.json",
+        "docs/windows-credential-recovery-test.md",
+        "docs/worker.ts",
+        "docs/wrangler.json",
+        "examples/README.md",
+        "packages/test-globals.ts",
+        "plugins/GETTING_STARTED.zh-CN.md",
+        "plugins/README.md",
+        "plugins/RELEASING.md",
+        "plugins/SIGNING.md",
+        "plugins/manifest.schema.json",
+        "plugins/marketplace.schema.json",
+        "scripts/db2-identifiers-proof.py",
+        "scripts/manual-mcp-check.py",
+        "scripts/nacos-service-seed.go",
+        "scripts/nacos-service-seed_test.go",
+        "scripts/notify_feishu.py",
+        "scripts/package-web-static.sh"
+      ]
+    },
+    {
+      "name": "devarent",
+      "full_name": "devarent/devarent",
+      "commit": "71b700de127c0e470f569482cda2e93c1855dd9c",
+      "files_seen": 25,
+      "text_files_read": 12,
+      "bytes_read": 54336,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "python_ast": 1
+      },
+      "skipped": {
+        "non_regular_member": 6,
+        "read_but_no_parser_for_language": 10,
+        "unsupported_extension": 12,
+        "over_1_MiB": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "devhub",
+      "full_name": "devarent/devhub",
+      "commit": "426bd29b555e28bf778bcdd7725c5e7857757bc0",
+      "files_seen": 1871,
+      "text_files_read": 1477,
+      "bytes_read": 8355833,
+      "checks": {
+        "bash_syntax": 8,
+        "yaml_safe_load": 40,
+        "python_ast": 15,
+        "strict_json": 23,
+        "workflow_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 382,
+        "read_but_no_parser_for_language": 1391,
+        "unsupported_extension": 393,
+        "over_1_MiB": 1
+      },
+      "findings": [
+        {
+          "path": "tsconfig.json",
+          "line": 2,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "devhub-modernized",
+      "full_name": "devarent/devhub-modernized",
+      "commit": "6fa12781b369fa8dd641d4b313ec0edfa1327a2c",
+      "files_seen": 1092,
+      "text_files_read": 858,
+      "bytes_read": 5796260,
+      "checks": {
+        "bash_syntax": 9,
+        "yaml_safe_load": 32,
+        "python_ast": 13,
+        "strict_json": 11,
+        "workflow_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 377,
+        "read_but_no_parser_for_language": 793,
+        "unsupported_extension": 232,
+        "over_1_MiB": 2
+      },
+      "findings": [
+        {
+          "path": "tsconfig.json",
+          "line": 2,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "devops-platform-2026",
+      "full_name": "devarent/devops-platform-2026",
+      "commit": "a5cee0780ba87aa9d0699832a968c26b25771c5c",
+      "files_seen": 54,
+      "text_files_read": 49,
+      "bytes_read": 79881,
+      "checks": {
+        "yaml_safe_load": 8,
+        "workflow_patterns": 2,
+        "yaml_template_skipped": 6,
+        "strict_json": 1,
+        "bash_syntax": 2
+      },
+      "skipped": {
+        "non_regular_member": 19,
+        "unsupported_extension": 5,
+        "read_but_no_parser_for_language": 32
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "elasticsearch-lab",
+      "full_name": "devarent/elasticsearch-lab",
+      "commit": "0f8e18f323da3a1128ca1f98c4903b90684b47b2",
+      "files_seen": 9,
+      "text_files_read": 6,
+      "bytes_read": 6343,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1,
+        "bash_syntax": 3
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "email-spam-detector",
+      "full_name": "devarent/email-spam-detector",
+      "commit": "da105b0b95999bead7799371bd8be113e9621120",
+      "files_seen": 22,
+      "text_files_read": 12,
+      "bytes_read": 51199,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "python_ast": 3
+      },
+      "skipped": {
+        "non_regular_member": 6,
+        "read_but_no_parser_for_language": 8,
+        "unsupported_extension": 7,
+        "dependency_or_generated_dir": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "firebird-lab",
+      "full_name": "devarent/firebird-lab",
+      "commit": "3d38dec58588ddc0c5df4b7dfba9fb660c1f8802",
+      "files_seen": 8,
+      "text_files_read": 5,
+      "bytes_read": 23139,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "hris-itk-laravel",
+      "full_name": "devarent/hris-itk-laravel",
+      "commit": "0401f1cf48dc493e26e7bbd6e301e312f9536d3d",
+      "files_seen": 186,
+      "text_files_read": 163,
+      "bytes_read": 944402,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "strict_json": 3
+      },
+      "skipped": {
+        "non_regular_member": 55,
+        "unsupported_extension": 18,
+        "read_but_no_parser_for_language": 159,
+        "dependency_or_generated_dir": 5
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "ibm-db2-lab",
+      "full_name": "devarent/ibm-db2-lab",
+      "commit": "c35337c6987714e98831cbe2ae8884029cedb433",
+      "files_seen": 8,
+      "text_files_read": 5,
+      "bytes_read": 23573,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "privileged-container",
+          "detail": "Service db2: privileged=true; assess whether required"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "influxdb-lab",
+      "full_name": "devarent/influxdb-lab",
+      "commit": "890baed387f90f6b9ea7a786228f6862f774a313",
+      "files_seen": 9,
+      "text_files_read": 5,
+      "bytes_read": 5470,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1,
+        "bash_syntax": 2
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 4,
+        "read_but_no_parser_for_language": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "intelligent-security-lab",
+      "full_name": "devarent/intelligent-security-lab",
+      "commit": "025e41067a256371d08890a3a0c127de93dc626d",
+      "files_seen": 39,
+      "text_files_read": 33,
+      "bytes_read": 221458,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "strict_json": 2,
+        "python_ast": 14
+      },
+      "skipped": {
+        "non_regular_member": 12,
+        "read_but_no_parser_for_language": 16,
+        "unsupported_extension": 6
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "intersystems-iris-lab",
+      "full_name": "devarent/intersystems-iris-lab",
+      "commit": "0bdba2998efb524ac59ff6ec3b8917d7ebdab621",
+      "files_seen": 8,
+      "text_files_read": 5,
+      "bytes_read": 23435,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "jailbreak-root",
+      "full_name": "devarent/jailbreak-root",
+      "commit": "307bae08f93906dff85beb1b0e73f2a0fcf05d07",
+      "files_seen": 31,
+      "text_files_read": 19,
+      "bytes_read": 38877,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "strict_json": 9,
+        "bash_syntax": 2
+      },
+      "skipped": {
+        "non_regular_member": 13,
+        "read_but_no_parser_for_language": 7,
+        "unsupported_extension": 12
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "jdbc-lab",
+      "full_name": "devarent/jdbc-lab",
+      "commit": "436436c473ac353c8ac7e7399f7083b564c177ec",
+      "files_seen": 11,
+      "text_files_read": 7,
+      "bytes_read": 26313,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1,
+        "bash_syntax": 1
+      },
+      "skipped": {
+        "non_regular_member": 9,
+        "unsupported_extension": 4,
+        "read_but_no_parser_for_language": 4
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "k8s",
+      "full_name": "devarent/k8s",
+      "commit": "41775f0d7e4efe5ee0d1bc0c4b39a0b8dacac05e",
+      "files_seen": 16,
+      "text_files_read": 13,
+      "bytes_read": 32001,
+      "checks": {
+        "yaml_safe_load": 6,
+        "workflow_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "read_but_no_parser_for_language": 7,
+        "unsupported_extension": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "lab-3-advanced-arithmetic",
+      "full_name": "devarent/lab-3-advanced-arithmetic",
+      "commit": "e88f09b54de136dbd3e6b4e24dab60120fe512b6",
+      "files_seen": 37,
+      "text_files_read": 17,
+      "bytes_read": 47717,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "python_ast": 8
+      },
+      "skipped": {
+        "non_regular_member": 10,
+        "read_but_no_parser_for_language": 8,
+        "unsupported_extension": 20
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "lambda-localstack-lab",
+      "full_name": "devarent/lambda-localstack-lab",
+      "commit": "e3ec803759c35220ac61334bcd89c2ec1981dceb",
+      "files_seen": 39,
+      "text_files_read": 30,
+      "bytes_read": 88980,
+      "checks": {
+        "yaml_safe_load": 3,
+        "workflow_patterns": 2,
+        "bash_syntax": 11,
+        "compose_patterns": 1,
+        "strict_json": 2
+      },
+      "skipped": {
+        "non_regular_member": 9,
+        "read_but_no_parser_for_language": 14,
+        "unsupported_extension": 9
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "laravel",
+      "full_name": "devarent/laravel",
+      "commit": "dcc46b55993deb4606ec6ff259cf67b2a27ebdcb",
+      "files_seen": 64,
+      "text_files_read": 39,
+      "bytes_read": 157797,
+      "checks": {
+        "strict_json": 2
+      },
+      "skipped": {
+        "non_regular_member": 34,
+        "unsupported_extension": 25,
+        "read_but_no_parser_for_language": 37
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "laravel-modernized",
+      "full_name": "devarent/laravel-modernized",
+      "commit": "96fba8bd0c5dd9015fa156b57977d62f6eaa8605",
+      "files_seen": 58,
+      "text_files_read": 34,
+      "bytes_read": 152389,
+      "checks": {
+        "strict_json": 2
+      },
+      "skipped": {
+        "non_regular_member": 33,
+        "unsupported_extension": 24,
+        "read_but_no_parser_for_language": 32
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "localstack-lambda-copy",
+      "full_name": "devarent/localstack-lambda-copy",
+      "commit": "1bab66eaf5baa766586153fafb6e17a9a862804e",
+      "files_seen": 39,
+      "text_files_read": 30,
+      "bytes_read": 89164,
+      "checks": {
+        "yaml_safe_load": 3,
+        "workflow_patterns": 2,
+        "bash_syntax": 11,
+        "compose_patterns": 1,
+        "strict_json": 2
+      },
+      "skipped": {
+        "non_regular_member": 9,
+        "read_but_no_parser_for_language": 14,
+        "unsupported_extension": 9
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "machine-learning-dicoding",
+      "full_name": "devarent/machine-learning-dicoding",
+      "commit": "07492a775afa61151a2b0a0efc9ef94726e5b6e9",
+      "files_seen": 30,
+      "text_files_read": 14,
+      "bytes_read": 52783,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "strict_json": 1,
+        "python_ast": 5
+      },
+      "skipped": {
+        "non_regular_member": 7,
+        "read_but_no_parser_for_language": 7,
+        "unsupported_extension": 13,
+        "over_1_MiB": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "mariadb-practicum",
+      "full_name": "devarent/mariadb-practicum",
+      "commit": "7a20f097b68a66b7df193e37831dcf3722412426",
+      "files_seen": 18,
+      "text_files_read": 14,
+      "bytes_read": 40964,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1,
+        "strict_json": 1,
+        "bash_syntax": 2
+      },
+      "skipped": {
+        "non_regular_member": 9,
+        "unsupported_extension": 4,
+        "read_but_no_parser_for_language": 9
+      },
+      "findings": [
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service mariadb: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service phpmyadmin: published port lacks loopback binding; review local-only lab threat model"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "microprocessor-microcontroller-lab",
+      "full_name": "devarent/microprocessor-microcontroller-lab",
+      "commit": "785281a1a40e92fd0232391f44f79db054831925",
+      "files_seen": 21,
+      "text_files_read": 8,
+      "bytes_read": 23924,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 6,
+        "read_but_no_parser_for_language": 7,
+        "unsupported_extension": 13
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "ml-pipeline-end-to-end",
+      "full_name": "devarent/ml-pipeline-end-to-end",
+      "commit": "23a1da6a4f8a990dfd227b00e99059efca92a9cb",
+      "files_seen": 33,
+      "text_files_read": 13,
+      "bytes_read": 84630,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "python_ast": 3
+      },
+      "skipped": {
+        "non_regular_member": 7,
+        "read_but_no_parser_for_language": 9,
+        "unsupported_extension": 20
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "mongodb-practicum",
+      "full_name": "devarent/mongodb-practicum",
+      "commit": "de03eae3119e1ce8945562760f10cb2b19acec94",
+      "files_seen": 14,
+      "text_files_read": 10,
+      "bytes_read": 36502,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1,
+        "strict_json": 1,
+        "bash_syntax": 2
+      },
+      "skipped": {
+        "non_regular_member": 10,
+        "unsupported_extension": 4,
+        "read_but_no_parser_for_language": 5
+      },
+      "findings": [
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service mongo: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service mongo-express: published port lacks loopback binding; review local-only lab threat model"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "neo4j-lab",
+      "full_name": "devarent/neo4j-lab",
+      "commit": "5321a5fcb89e59d9a0b51e9756bce64446c7642c",
+      "files_seen": 8,
+      "text_files_read": 3,
+      "bytes_read": 4677,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 5,
+        "read_but_no_parser_for_language": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "nextjs-aws-production",
+      "full_name": "devarent/nextjs-aws-production",
+      "commit": "dc19a0a2b1346d286e4f05b751a38bae93d18d8f",
+      "files_seen": 56,
+      "text_files_read": 45,
+      "bytes_read": 329976,
+      "checks": {
+        "yaml_safe_load": 5,
+        "workflow_patterns": 2,
+        "strict_json": 5,
+        "compose_patterns": 1,
+        "bash_syntax": 7
+      },
+      "skipped": {
+        "non_regular_member": 19,
+        "unsupported_extension": 11,
+        "read_but_no_parser_for_language": 28
+      },
+      "findings": [
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service app: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service db: published port lacks loopback binding; review local-only lab threat model"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "nginx",
+      "full_name": "devarent/nginx",
+      "commit": "79fb7f981fc99ba8f624a627821e2bef94935a4a",
+      "files_seen": 11,
+      "text_files_read": 8,
+      "bytes_read": 23225,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 4,
+        "read_but_no_parser_for_language": 7,
+        "unsupported_extension": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "qa-automation-2026",
+      "full_name": "devarent/qa-automation-2026",
+      "commit": "e87fbdb052416f8a117e9774ec781d9d62e82d8b",
+      "files_seen": 59,
+      "text_files_read": 51,
+      "bytes_read": 304329,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "strict_json": 3
+      },
+      "skipped": {
+        "non_regular_member": 19,
+        "unsupported_extension": 8,
+        "read_but_no_parser_for_language": 46
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "qdrant-lab",
+      "full_name": "devarent/qdrant-lab",
+      "commit": "a2ab3681e31817d59e448bd995a05718574480ac",
+      "files_seen": 9,
+      "text_files_read": 6,
+      "bytes_read": 23519,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1,
+        "bash_syntax": 2,
+        "python_ast": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "quantum-hybrid-diffusion-models",
+      "full_name": "devarent/quantum-hybrid-diffusion-models",
+      "commit": "75f263474ebf701106ef94568efb95b78f60ba1e",
+      "files_seen": 1405,
+      "text_files_read": 808,
+      "bytes_read": 5891278,
+      "checks": {
+        "yaml_safe_load": 37,
+        "workflow_patterns": 7,
+        "python_ast": 236,
+        "strict_json": 7,
+        "bash_syntax": 18
+      },
+      "skipped": {
+        "non_regular_member": 178,
+        "read_but_no_parser_for_language": 510,
+        "unsupported_extension": 584,
+        "over_1_MiB": 13
+      },
+      "findings": [
+        {
+          "path": "angular-dashboard/tsconfig.app.json",
+          "line": 1,
+          "rule": "json-syntax",
+          "detail": "Expecting value; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "angular-dashboard/tsconfig.json",
+          "line": 1,
+          "rule": "json-syntax",
+          "detail": "Expecting value; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "angular-dashboard/tsconfig.spec.json",
+          "line": 1,
+          "rule": "json-syntax",
+          "detail": "Expecting value; review JSONC/intentional fixture before fixing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "quantum-hybrid-ml-databricks-snowflake",
+      "full_name": "devarent/quantum-hybrid-ml-databricks-snowflake",
+      "commit": "6fb2d64a410f8a3af279a411be78c3a98ff42646",
+      "files_seen": 1405,
+      "text_files_read": 808,
+      "bytes_read": 5892073,
+      "checks": {
+        "yaml_safe_load": 37,
+        "workflow_patterns": 7,
+        "python_ast": 236,
+        "strict_json": 7,
+        "bash_syntax": 18
+      },
+      "skipped": {
+        "non_regular_member": 178,
+        "read_but_no_parser_for_language": 510,
+        "unsupported_extension": 584,
+        "over_1_MiB": 13
+      },
+      "findings": [
+        {
+          "path": "angular-dashboard/tsconfig.app.json",
+          "line": 1,
+          "rule": "json-syntax",
+          "detail": "Expecting value; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "angular-dashboard/tsconfig.json",
+          "line": 1,
+          "rule": "json-syntax",
+          "detail": "Expecting value; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "angular-dashboard/tsconfig.spec.json",
+          "line": 1,
+          "rule": "json-syntax",
+          "detail": "Expecting value; review JSONC/intentional fixture before fixing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "quantum-hybrid-ml-databricks-snowflake-modernized",
+      "full_name": "devarent/quantum-hybrid-ml-databricks-snowflake-modernized",
+      "commit": "304c42600d42da4142583e9a9d869bfe84b457e6",
+      "files_seen": 1405,
+      "text_files_read": 808,
+      "bytes_read": 5892167,
+      "checks": {
+        "yaml_safe_load": 37,
+        "workflow_patterns": 7,
+        "python_ast": 236,
+        "strict_json": 7,
+        "bash_syntax": 18
+      },
+      "skipped": {
+        "non_regular_member": 178,
+        "read_but_no_parser_for_language": 510,
+        "unsupported_extension": 584,
+        "over_1_MiB": 13
+      },
+      "findings": [
+        {
+          "path": "angular-dashboard/tsconfig.app.json",
+          "line": 1,
+          "rule": "json-syntax",
+          "detail": "Expecting value; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "angular-dashboard/tsconfig.json",
+          "line": 1,
+          "rule": "json-syntax",
+          "detail": "Expecting value; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "angular-dashboard/tsconfig.spec.json",
+          "line": 1,
+          "rule": "json-syntax",
+          "detail": "Expecting value; review JSONC/intentional fixture before fixing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "react",
+      "full_name": "devarent/react",
+      "commit": "70460d245de02334da41996ae9eb56ef6430ba7b",
+      "files_seen": 7284,
+      "text_files_read": 6830,
+      "bytes_read": 30620653,
+      "checks": {
+        "strict_json": 153,
+        "yaml_safe_load": 32,
+        "workflow_patterns": 27,
+        "bash_syntax": 18
+      },
+      "skipped": {
+        "non_regular_member": 643,
+        "read_but_no_parser_for_language": 6627,
+        "unsupported_extension": 453,
+        "over_1_MiB": 1
+      },
+      "findings": [
+        {
+          "path": ".github/workflows/compiler_discord_notify.yml",
+          "line": 28,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": ".github/workflows/compiler_prereleases_manual.yml",
+          "line": 32,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": ".github/workflows/compiler_prereleases_nightly.yml",
+          "line": 16,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": ".github/workflows/devtools_discord_notify.yml",
+          "line": 28,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": ".github/workflows/runtime_discord_notify.yml",
+          "line": 30,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": ".github/workflows/shared_label_core_team_prs.yml",
+          "line": 29,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/tsconfig.json",
+          "line": 1,
+          "rule": "json-syntax",
+          "detail": "Expecting value; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/babel-plugin-react-compiler/tsconfig.json",
+          "line": 9,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/eslint-plugin-react-compiler/tsconfig.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/make-read-only-util/tsconfig.json",
+          "line": 8,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/react-compiler-healthcheck/tsconfig.json",
+          "line": 11,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/react-compiler-runtime/tsconfig.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/react-forgive/server/tsconfig.json",
+          "line": 12,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/react-forgive/tsconfig.json",
+          "line": 13,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/react-mcp-server/tsconfig.json",
+          "line": 11,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/snap/tsconfig.json",
+          "line": 11,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/eslint-plugin-react-hooks/tsconfig.json",
+          "line": 24,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "react-modernized",
+      "full_name": "devarent/react-modernized",
+      "commit": "6fc80e1826c18d49a792de1bc96e4fae1f41e8af",
+      "files_seen": 7284,
+      "text_files_read": 6830,
+      "bytes_read": 30620935,
+      "checks": {
+        "strict_json": 153,
+        "yaml_safe_load": 32,
+        "workflow_patterns": 27,
+        "bash_syntax": 18
+      },
+      "skipped": {
+        "non_regular_member": 643,
+        "read_but_no_parser_for_language": 6627,
+        "unsupported_extension": 453,
+        "over_1_MiB": 1
+      },
+      "findings": [
+        {
+          "path": ".github/workflows/compiler_discord_notify.yml",
+          "line": 28,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": ".github/workflows/compiler_prereleases_manual.yml",
+          "line": 32,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": ".github/workflows/compiler_prereleases_nightly.yml",
+          "line": 16,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": ".github/workflows/devtools_discord_notify.yml",
+          "line": 28,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": ".github/workflows/runtime_discord_notify.yml",
+          "line": 30,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": ".github/workflows/shared_label_core_team_prs.yml",
+          "line": 29,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": "compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/tsconfig.json",
+          "line": 1,
+          "rule": "json-syntax",
+          "detail": "Expecting value; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/babel-plugin-react-compiler/tsconfig.json",
+          "line": 9,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/eslint-plugin-react-compiler/tsconfig.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/make-read-only-util/tsconfig.json",
+          "line": 8,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/react-compiler-healthcheck/tsconfig.json",
+          "line": 11,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/react-compiler-runtime/tsconfig.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/react-forgive/server/tsconfig.json",
+          "line": 12,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/react-forgive/tsconfig.json",
+          "line": 13,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/react-mcp-server/tsconfig.json",
+          "line": 11,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "compiler/packages/snap/tsconfig.json",
+          "line": 11,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/eslint-plugin-react-hooks/tsconfig.json",
+          "line": 24,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "redis-lab",
+      "full_name": "devarent/redis-lab",
+      "commit": "8751fbdf22c38bececf271c194c93f2a34ab11bd",
+      "files_seen": 8,
+      "text_files_read": 4,
+      "bytes_read": 22191,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1,
+        "python_ast": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 4,
+        "read_but_no_parser_for_language": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "redshift-lab",
+      "full_name": "devarent/redshift-lab",
+      "commit": "d26a000bd167229a9a5229514f3c281c719bb1de",
+      "files_seen": 7,
+      "text_files_read": 4,
+      "bytes_read": 5880,
+      "checks": {},
+      "skipped": {
+        "non_regular_member": 3,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 4
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "repo-atlas-next",
+      "full_name": "devarent/repo-atlas-next",
+      "commit": "0c85f974531369796edfa90daeb0175042fe0314",
+      "files_seen": 62,
+      "text_files_read": 40,
+      "bytes_read": 228263,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "strict_json": 4,
+        "compose_patterns": 1,
+        "bash_syntax": 1,
+        "python_ast": 3
+      },
+      "skipped": {
+        "non_regular_member": 13,
+        "unsupported_extension": 21,
+        "read_but_no_parser_for_language": 30,
+        "over_1_MiB": 1
+      },
+      "findings": [
+        {
+          "path": "docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service atlas: published port lacks loopback binding; review local-only lab threat model"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "scripts",
+      "full_name": "devarent/scripts",
+      "commit": "c76f2c1812c9229bf270503b0fcc9eaf1cea76d7",
+      "files_seen": 13,
+      "text_files_read": 9,
+      "bytes_read": 30240,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "bash_syntax": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "read_but_no_parser_for_language": 7,
+        "unsupported_extension": 4
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "self-concept-reflection",
+      "full_name": "devarent/self-concept-reflection",
+      "commit": "b69c827936f7d6aed6d05cedd659b10864b9c1e9",
+      "files_seen": 14,
+      "text_files_read": 8,
+      "bytes_read": 23646,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "read_but_no_parser_for_language": 7,
+        "unsupported_extension": 6
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "sensor-hewan",
+      "full_name": "devarent/sensor-hewan",
+      "commit": "4e25021ea7584bd6f8489ed207fa1e7eba3bc9e2",
+      "files_seen": 447,
+      "text_files_read": 28,
+      "bytes_read": 231755,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "python_ast": 13
+      },
+      "skipped": {
+        "non_regular_member": 25,
+        "read_but_no_parser_for_language": 13,
+        "unsupported_extension": 418,
+        "over_1_MiB": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "snowflake-databricks",
+      "full_name": "devarent/snowflake-databricks",
+      "commit": "6baac9daf9c5837ea8a20d274060ce505137f124",
+      "files_seen": 15,
+      "text_files_read": 10,
+      "bytes_read": 32547,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "read_but_no_parser_for_language": 9,
+        "unsupported_extension": 5
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "snowflake-lab",
+      "full_name": "devarent/snowflake-lab",
+      "commit": "5d22753334fdf9996f2a7565712e96978bee2412",
+      "files_seen": 7,
+      "text_files_read": 4,
+      "bytes_read": 22468,
+      "checks": {},
+      "skipped": {
+        "non_regular_member": 3,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 4
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "sql-server-lab",
+      "full_name": "devarent/sql-server-lab",
+      "commit": "e730f53b74c18118df24a36f103de4545fe3765a",
+      "files_seen": 8,
+      "text_files_read": 5,
+      "bytes_read": 23762,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "tdengine-lab",
+      "full_name": "devarent/tdengine-lab",
+      "commit": "f5f6571e530968f96bba781373007fe5048bb64b",
+      "files_seen": 8,
+      "text_files_read": 5,
+      "bytes_read": 5442,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "teradata-lab",
+      "full_name": "devarent/teradata-lab",
+      "commit": "28e80e8bef58a446322c02c2caf63db9007014aa",
+      "files_seen": 6,
+      "text_files_read": 3,
+      "bytes_read": 5365,
+      "checks": {},
+      "skipped": {
+        "non_regular_member": 3,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "terraform-databricks-sra",
+      "full_name": "devarent/terraform-databricks-sra",
+      "commit": "a9db178ca70c61c88a53fb84ae6856050ed57151",
+      "files_seen": 401,
+      "text_files_read": 337,
+      "bytes_read": 988522,
+      "checks": {
+        "yaml_safe_load": 17,
+        "workflow_patterns": 8,
+        "python_ast": 5,
+        "strict_json": 3,
+        "bash_syntax": 1
+      },
+      "skipped": {
+        "non_regular_member": 109,
+        "read_but_no_parser_for_language": 311,
+        "unsupported_extension": 64
+      },
+      "findings": [
+        {
+          "path": ".github/workflows/docs-deploy.yml",
+          "line": 1,
+          "rule": "inactive-workflow",
+          "detail": "Workflow file contains comments/whitespace only"
+        },
+        {
+          "path": ".github/workflows/tfsec-pr-commenter.yml",
+          "line": 15,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": "docs/sra/tsconfig.json",
+          "line": 2,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "terraform-databricks-sra-modernized",
+      "full_name": "devarent/terraform-databricks-sra-modernized",
+      "commit": "de90425508fac1f962e1809253f6190f808be326",
+      "files_seen": 403,
+      "text_files_read": 339,
+      "bytes_read": 991973,
+      "checks": {
+        "yaml_safe_load": 18,
+        "workflow_patterns": 9,
+        "python_ast": 5,
+        "strict_json": 3,
+        "bash_syntax": 1
+      },
+      "skipped": {
+        "non_regular_member": 109,
+        "read_but_no_parser_for_language": 312,
+        "unsupported_extension": 64
+      },
+      "findings": [
+        {
+          "path": ".github/workflows/docs-deploy.yml",
+          "line": 1,
+          "rule": "inactive-workflow",
+          "detail": "Workflow file contains comments/whitespace only"
+        },
+        {
+          "path": ".github/workflows/tfsec-pr-commenter.yml",
+          "line": 15,
+          "rule": "mutable-action",
+          "detail": "Action uses a moving branch; pin a reviewed commit"
+        },
+        {
+          "path": "docs/sra/tsconfig.json",
+          "line": 2,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "ui",
+      "full_name": "devarent/ui",
+      "commit": "1244c5d3301be08757f1f0244751e6eed7e3ef47",
+      "files_seen": 6414,
+      "text_files_read": 5576,
+      "bytes_read": 24603848,
+      "checks": {
+        "strict_json": 1044,
+        "yaml_safe_load": 53,
+        "workflow_patterns": 12,
+        "bash_syntax": 2
+      },
+      "skipped": {
+        "non_regular_member": 711,
+        "read_but_no_parser_for_language": 4477,
+        "unsupported_extension": 836,
+        "over_1_MiB": 2
+      },
+      "findings": [
+        {
+          "path": "apps/v4/tsconfig.json",
+          "line": 23,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/registry/test/fixtures/frameworks/remix-indie-stack/tsconfig.json",
+          "line": 25,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/registry/test/fixtures/frameworks/remix/tsconfig.json",
+          "line": 28,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/registry/test/fixtures/frameworks/t3-app/tsconfig.json",
+          "line": 3,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/registry/test/fixtures/frameworks/vite/tsconfig.app.json",
+          "line": 9,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/registry/test/fixtures/frameworks/vite/tsconfig.node.json",
+          "line": 8,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/registry/test/fixtures/vite-with-tailwind/tsconfig.json",
+          "line": 9,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/tests/fixtures/vite-app/tsconfig.app.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/tests/fixtures/vite-app/tsconfig.node.json",
+          "line": 9,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/start-app/tsconfig.json",
+          "line": 19,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/start-monorepo/apps/web/tsconfig.json",
+          "line": 20,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/vite-app/tsconfig.app.json",
+          "line": 11,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/vite-app/tsconfig.node.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/vite-monorepo/apps/web/tsconfig.app.json",
+          "line": 11,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/vite-monorepo/apps/web/tsconfig.node.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "ui-modernized",
+      "full_name": "devarent/ui-modernized",
+      "commit": "919521aea6bcfc4d58c400a1e1e46f6adb328a1a",
+      "files_seen": 4792,
+      "text_files_read": 4120,
+      "bytes_read": 19790019,
+      "checks": {
+        "strict_json": 1006,
+        "yaml_safe_load": 50,
+        "workflow_patterns": 9,
+        "bash_syntax": 2
+      },
+      "skipped": {
+        "non_regular_member": 611,
+        "read_but_no_parser_for_language": 3062,
+        "unsupported_extension": 672
+      },
+      "findings": [
+        {
+          "path": "apps/v4/tsconfig.json",
+          "line": 23,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/shadcn/test/fixtures/frameworks/remix-indie-stack/tsconfig.json",
+          "line": 25,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/shadcn/test/fixtures/frameworks/remix/tsconfig.json",
+          "line": 28,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/shadcn/test/fixtures/frameworks/t3-app/tsconfig.json",
+          "line": 3,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/shadcn/test/fixtures/frameworks/vite/tsconfig.app.json",
+          "line": 9,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/shadcn/test/fixtures/frameworks/vite/tsconfig.node.json",
+          "line": 8,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/shadcn/test/fixtures/vite-with-tailwind/tsconfig.json",
+          "line": 9,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/tests/fixtures/vite-app/tsconfig.app.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "packages/tests/fixtures/vite-app/tsconfig.node.json",
+          "line": 9,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/start-app/tsconfig.json",
+          "line": 19,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/start-monorepo/apps/web/tsconfig.json",
+          "line": 20,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/vite-app/tsconfig.app.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/vite-app/tsconfig.node.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/vite-monorepo/apps/web/tsconfig.app.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        },
+        {
+          "path": "templates/vite-monorepo/apps/web/tsconfig.node.json",
+          "line": 10,
+          "rule": "json-syntax",
+          "detail": "Expecting property name enclosed in double quotes; review JSONC/intentional fixture before fixing"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "unit-testing-practice",
+      "full_name": "devarent/unit-testing-practice",
+      "commit": "9a1dd66e5784cc85458dfd761a70c7057803c543",
+      "files_seen": 20,
+      "text_files_read": 13,
+      "bytes_read": 31853,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "strict_json": 2
+      },
+      "skipped": {
+        "non_regular_member": 8,
+        "read_but_no_parser_for_language": 10,
+        "unsupported_extension": 7
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "uts-ec2-amazon-linux",
+      "full_name": "devarent/uts-ec2-amazon-linux",
+      "commit": "af8f998ab1b86e12ab25945b26e3dd390d9d16f8",
+      "files_seen": 369,
+      "text_files_read": 273,
+      "bytes_read": 1344462,
+      "checks": {
+        "yaml_safe_load": 44,
+        "workflow_patterns": 3,
+        "bash_syntax": 48,
+        "compose_patterns": 4,
+        "strict_json": 4,
+        "python_ast": 5,
+        "yaml_template_skipped": 16
+      },
+      "skipped": {
+        "non_regular_member": 99,
+        "unsupported_extension": 96,
+        "read_but_no_parser_for_language": 156
+      },
+      "findings": [
+        {
+          "path": "LAB/03-DOCKER/docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service web: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "LAB/03-DOCKER/docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service localstack: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "LAB/04-TERRAFORM/localstack/docker-compose.yaml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service localstack: published port lacks loopback binding; review local-only lab threat model"
+        },
+        {
+          "path": "UTS-EC2-WebHosting/ansible/deploy-static-apache.yml",
+          "line": 65,
+          "rule": "yaml-parse",
+          "detail": "YAML loader rejected document; custom tags/dialect may need native tooling"
+        },
+        {
+          "path": "UTS-EC2-WebHosting/docker-compose.yml",
+          "line": 1,
+          "rule": "compose-public-port",
+          "detail": "Service nginx: published port lacks loopback binding; review local-only lab threat model"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "vertica-lab",
+      "full_name": "devarent/vertica-lab",
+      "commit": "7b109880d292a2bbd3ce77b9c807b51f1afa9cf1",
+      "files_seen": 6,
+      "text_files_read": 3,
+      "bytes_read": 4643,
+      "checks": {},
+      "skipped": {
+        "non_regular_member": 3,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 3
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "victoriametrics-lab",
+      "full_name": "devarent/victoriametrics-lab",
+      "commit": "8eba4046998061ec08bc2614af516830d2a2ba8c",
+      "files_seen": 9,
+      "text_files_read": 6,
+      "bytes_read": 5742,
+      "checks": {
+        "yaml_safe_load": 2,
+        "workflow_patterns": 1,
+        "compose_patterns": 1,
+        "bash_syntax": 3
+      },
+      "skipped": {
+        "non_regular_member": 5,
+        "unsupported_extension": 3,
+        "read_but_no_parser_for_language": 1
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "week-4-programming-fundamentals",
+      "full_name": "devarent/week-4-programming-fundamentals",
+      "commit": "643bec8526117077ddf55fa3da135de297781d7d",
+      "files_seen": 74,
+      "text_files_read": 34,
+      "bytes_read": 332047,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "python_ast": 12
+      },
+      "skipped": {
+        "non_regular_member": 17,
+        "read_but_no_parser_for_language": 21,
+        "unsupported_extension": 40
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "wokwi",
+      "full_name": "devarent/wokwi",
+      "commit": "b1a7265202b3334bf96bc8a96508cb8f7f0f67be",
+      "files_seen": 12,
+      "text_files_read": 10,
+      "bytes_read": 25146,
+      "checks": {
+        "yaml_safe_load": 1,
+        "workflow_patterns": 1,
+        "strict_json": 1
+      },
+      "skipped": {
+        "non_regular_member": 4,
+        "read_but_no_parser_for_language": 8,
+        "unsupported_extension": 2
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "zerobus-sdk",
+      "full_name": "devarent/zerobus-sdk",
+      "commit": "a4d739bfa2913f7fe0d648cd98116fd569ed5cfe",
+      "files_seen": 777,
+      "text_files_read": 571,
+      "bytes_read": 6830653,
+      "checks": {
+        "yaml_safe_load": 24,
+        "bash_syntax": 12,
+        "workflow_patterns": 20,
+        "python_ast": 50,
+        "strict_json": 8
+      },
+      "skipped": {
+        "non_regular_member": 207,
+        "read_but_no_parser_for_language": 477,
+        "unsupported_extension": 201,
+        "over_1_MiB": 5
+      },
+      "findings": [],
+      "errors": []
+    },
+    {
+      "name": "zerobus-sdk-modernized",
+      "full_name": "devarent/zerobus-sdk-modernized",
+      "commit": "f3fe2c61ded6bf55d22400fe16dea7fb420b87b0",
+      "files_seen": 777,
+      "text_files_read": 570,
+      "bytes_read": 6787992,
+      "checks": {
+        "yaml_safe_load": 24,
+        "bash_syntax": 12,
+        "workflow_patterns": 20,
+        "python_ast": 48,
+        "strict_json": 8
+      },
+      "skipped": {
+        "non_regular_member": 207,
+        "unsupported_extension": 202,
+        "read_but_no_parser_for_language": 478,
+        "over_1_MiB": 5
+      },
+      "findings": [],
+      "errors": []
+    }
+  ]
+}

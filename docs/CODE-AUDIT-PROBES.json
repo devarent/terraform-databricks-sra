@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-11-22T09:50:03.421316+00:00",
+  "probes": [
+    {
+      "repository": "arya123",
+      "commit": "d144474c8db891bddee5aad898f76bc6a5abab49",
+      "path": "UTS-EC2-WebHosting/ansible/deploy-static-apache.yml",
+      "result": "Original YAML rejected; removing terminal EOF parses; git apply --check passed. Ansible execution not tested."
+    },
+    {
+      "repository": "uts-ec2-amazon-linux",
+      "commit": "af8f998ab1b86e12ab25945b26e3dd390d9d16f8",
+      "path": "UTS-EC2-WebHosting/ansible/deploy-static-apache.yml",
+      "result": "Original YAML rejected; removing terminal EOF parses; git apply --check passed. Ansible execution not tested."
+    },
+    {
+      "repository": "aws-billing-qwen-3-32b",
+      "commit": "f5e6ade8c2701389d1a401bbf30be217abde5d6e",
+      "path": ".vscode/launch.json",
+      "result": "Original JSON rejected; missing quote fixed and JSON parses; git apply --check passed. Debugger itself not launched."
+    },
+    {
+      "repository": "chromadb-lab",
+      "commit": "66b53871a4031843d8235d250ac94a679b03cb67",
+      "path": "examples/01_heartbeat.sh",
+      "result": "Local HTTP stub: original exits 0 on v2 HTTP 404 without trying v1; -f fix calls v1 and succeeds. Patch applicability passed; no Chroma server used."
+    },
+    {
+      "repository": "ml-pipeline-end-to-end",
+      "commit": "23a1da6a4f8a990dfd227b00e99059efca92a9cb",
+      "path": "inference_deploy.py",
+      "result": "Same SSH record: service_ssh=0 alone, =1 in batch with HTTP. Confirms batch-dependent encoding; identity scaler, no model deserialization or training."
+    },
+    {
+      "repository": "database-labs-demo",
+      "commit": "84ab5618104e14b51f4f430c6a00e13ebf918a5d",
+      "path": "app/main.py",
+      "result": "Original Pydantic model accepts whitespace-only name/category and emits empty strings. Before-validator rejects blank/one-char/non-string input and trims valid input; patch applies. No production DB touched."
+    }
+  ]
+}

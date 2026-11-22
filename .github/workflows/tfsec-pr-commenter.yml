@@ -1,10 +1,17 @@
+# Modified in the devarent fork, 2026-11-22: pin checkout and limit permissions.
 name: tfsec-pr-commenter
+permissions:
+  contents: read
 on:
   pull_request:
 jobs:
   tfsec:
     name: tfsec PR commenter
+    # Fork PR tokens cannot write comments; do not run a known-failing commenter.
+    # Never use pull_request_target to scan untrusted PR code with a write token.
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     permissions:
       contents: read
@@ -12,7 +19,9 @@ jobs:
 
     steps:
       - name: Clone repo
-        uses: actions/checkout@main
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
       - name: tfsec
         uses: aquasecurity/tfsec-pr-commenter-action@v1.2.0
         with:

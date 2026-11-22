@@ -1,0 +1,109 @@
+{
+  "fetched_at": "2026-11-22T10:00:02.864295+00:00",
+  "scope": "manifest inspection only; version constraints are not proof of installed/working versions",
+  "manifests": [
+    {
+      "repository": "devarent/repo-atlas-next",
+      "commit": "0c85f974531369796edfa90daeb0175042fe0314",
+      "path": "package.json",
+      "source_url": "https://github.com/devarent/repo-atlas-next/blob/0c85f974531369796edfa90daeb0175042fe0314/package.json",
+      "dependencies": {
+        "@radix-ui/react-dialog": "^1.1.15",
+        "@radix-ui/react-scroll-area": "^1.2.10",
+        "@radix-ui/react-separator": "^1.1.7",
+        "@radix-ui/react-slot": "^1.2.3",
+        "@radix-ui/react-tabs": "^1.1.13",
+        "@radix-ui/react-tooltip": "^1.2.8",
+        "class-variance-authority": "^0.7.1",
+        "clsx": "^2.1.1",
+        "lucide-react": "^0.468.0",
+        "next": "16.4.6",
+        "react": "19.0.0",
+        "react-dom": "19.0.0",
+        "tailwind-merge": "^2.6.0"
+      },
+      "devDependencies": {
+        "@tailwindcss/postcss": "^4.0.0",
+        "@types/node": "^22.10.0",
+        "@types/react": "^19.0.0",
+        "@types/react-dom": "^19.0.0",
+        "sharp": "^0.35.5",
+        "tailwindcss": "^4.0.0",
+        "typescript": "^5.7.0"
+      },
+      "scripts": {
+        "dev": "next dev --webpack -p 3100",
+        "build": "next build --webpack",
+        "start": "next start -p 3100",
+        "lint": "next lint"
+      }
+    },
+    {
+      "repository": "devarent/hris-itk-laravel",
+      "commit": "0401f1cf48dc493e26e7bbd6e301e312f9536d3d",
+      "path": "composer.json",
+      "source_url": "https://github.com/devarent/hris-itk-laravel/blob/0401f1cf48dc493e26e7bbd6e301e312f9536d3d/composer.json",
+      "require": {
+        "php": "^8.2",
+        "barryvdh/laravel-dompdf": "^3.1",
+        "laravel/framework": "^11.57",
+        "phpoffice/phpspreadsheet": "^2.0"
+      }
+    },
+    {
+      "repository": "devarent/hris-itk-laravel",
+      "commit": "0401f1cf48dc493e26e7bbd6e301e312f9536d3d",
+      "path": "package.json",
+      "source_url": "https://github.com/devarent/hris-itk-laravel/blob/0401f1cf48dc493e26e7bbd6e301e312f9536d3d/package.json",
+      "dependencies": {
+        "alpinejs": "^3.13.3",
+        "lucide": "^0.303.0"
+      },
+      "devDependencies": {
+        "@tailwindcss/forms": "^0.5.7",
+        "@tailwindcss/typography": "^0.5.10",
+        "autoprefixer": "^10.4.16",
+        "axios": "^1.18.1",
+        "laravel-vite-plugin": "^1.3.0",
+        "postcss": "^8.4.32",
+        "tailwindcss": "^3.4.0",
+        "vite": "^5.0.10"
+      },
+      "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+      }
+    },
+    {
+      "repository": "devarent/nextjs-aws-production",
+      "commit": "dc19a0a2b1346d286e4f05b751a38bae93d18d8f",
+      "path": "app/package.json",
+      "source_url": "https://github.com/devarent/nextjs-aws-production/blob/dc19a0a2b1346d286e4f05b751a38bae93d18d8f/app/package.json",
+      "dependencies": {
+        "next": "14.2.15",
+        "pg": "^8.13.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+      },
+      "devDependencies": {
+        "@types/node": "^20.0.0",
+        "@types/pg": "^8.11.0",
+        "@types/react": "^18.3.0",
+        "@types/react-dom": "^18.3.0",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^8.57.1",
+        "eslint-config-next": "^14.2.15",
+        "postcss": "^8.4.49",
+        "tailwindcss": "^3.4.0",
+        "typescript": "^5.7.0"
+      },
+      "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "typecheck": "tsc --noEmit"
+      }
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+<!-- Modified in the devarent fork, 2026-11-22: correct setup-terraform version input documentation. -->
 # Testing Workflows
 <!-- TOC -->
 * [Testing Workflows](#testing-workflows)
@@ -129,7 +130,7 @@ on a terraform plan if the provider were authenticated.
 
 | Input               | Type   | Required | Default | Description                                                                                                   |
 |---------------------|--------|----------|---------|---------------------------------------------------------------------------------------------------------------|
-| `terraform_version` | string | No       | `~>1.0` | The version of Terraform to install for both test and fmt. This supports version constraints (e.g., `~>1.0`). |
+| `terraform_version` | string | No       | `1.x` | Version installed for test and fmt. setup-terraform accepts npm semver ranges (e.g. `1.x`, `~1.14`), not Terraform's HCL constraint syntax. |
 
 ### 4. **Terraform Format (fmt) Settings**
 

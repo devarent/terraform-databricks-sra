@@ -1,0 +1,2782 @@
+{
+  "owner": "devarent",
+  "fetched_at": "2026-11-22T09:40:31.306877+00:00",
+  "repositories": [
+    {
+      "name": "amazon-linux-ami-kernel",
+      "full_name": "devarent/amazon-linux-ami-kernel",
+      "html_url": "https://github.com/devarent/amazon-linux-ami-kernel",
+      "description": "Eksplorasi Amazon Linux AMI, kernel, dan konfigurasi EC2.",
+      "language": "HTML",
+      "topics": [
+        "amazon-linux",
+        "ami",
+        "aws",
+        "cloud",
+        "ec2",
+        "html",
+        "linux"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 112,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:13:48Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "apache-kafka-lab",
+      "full_name": "devarent/apache-kafka-lab",
+      "html_url": "https://github.com/devarent/apache-kafka-lab",
+      "description": "Run a single-node Kafka 4 cluster in KRaft mode and practice topics, producers, and consumers.",
+      "language": null,
+      "topics": [
+        "apache-kafka",
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "event-driven",
+        "lab",
+        "streaming"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 5,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T06:01:00Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "apache-kylin-lab",
+      "full_name": "devarent/apache-kylin-lab",
+      "html_url": "https://github.com/devarent/apache-kylin-lab",
+      "description": "Run Apache Kylin standalone in Docker and explore OLAP cubes over Hive-style tables.",
+      "language": null,
+      "topics": [
+        "apache-kylin",
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "hadoop",
+        "lab",
+        "olap",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 5,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T05:55:13Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "arya123",
+      "full_name": "devarent/arya123",
+      "html_url": "https://github.com/devarent/arya123",
+      "description": "Portfolio dan halaman web pribadi.",
+      "language": "HTML",
+      "topics": [
+        "css",
+        "html",
+        "personal",
+        "portfolio",
+        "web"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 1238,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:10:31Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml",
+        "deploy-ec2.yml",
+        "deploy-k8s.yml"
+      ]
+    },
+    {
+      "name": "assembler-addressing-modes-lab",
+      "full_name": "devarent/assembler-addressing-modes-lab",
+      "html_url": "https://github.com/devarent/assembler-addressing-modes-lab",
+      "description": "Praktikum assembly mikroprosesor & mikrokontroler - addressing mode dan instruksi dasar.",
+      "language": "Assembly",
+      "topics": [
+        "assembly",
+        "computer-architecture",
+        "dosbox",
+        "microcontroller",
+        "microprocessor",
+        "praktikum"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 67,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:10:35Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "aws-billing-qwen-3-32b",
+      "full_name": "devarent/aws-billing-qwen-3-32b",
+      "html_url": "https://github.com/devarent/aws-billing-qwen-3-32b",
+      "description": "Workflow analisis billing AWS menggunakan model Qwen3-32B.",
+      "language": "PHP",
+      "topics": [
+        "ai",
+        "aws",
+        "billing",
+        "cost-optimization",
+        "llm",
+        "php",
+        "qwen"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 448,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:10:39Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "aws-ec2-web-hosting-part-1",
+      "full_name": "devarent/aws-ec2-web-hosting-part-1",
+      "html_url": "https://github.com/devarent/aws-ec2-web-hosting-part-1",
+      "description": "AWS EC2 Web Hosting Lab - Next.js 16, Tailwind, PostgreSQL, Docker, Terraform, Kubernetes/Helm.",
+      "language": "TypeScript",
+      "topics": [
+        "aws",
+        "devops",
+        "docker",
+        "ec2",
+        "kubernetes",
+        "nextjs",
+        "nodejs",
+        "postgresql",
+        "tailwindcss",
+        "terraform",
+        "typescript"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 725,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:20:05Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml",
+        "deploy-ec2.yml",
+        "deploy-k8s.yml"
+      ]
+    },
+    {
+      "name": "aws-rds",
+      "full_name": "devarent/aws-rds",
+      "html_url": "https://github.com/devarent/aws-rds",
+      "description": "Konfigurasi dan praktik Amazon Relational Database Service (RDS).",
+      "language": "Shell",
+      "topics": [
+        "aws",
+        "cloud",
+        "database",
+        "devops",
+        "postgres",
+        "postgresql",
+        "rds",
+        "shell"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 140041,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:13:57Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "backend-service-2026",
+      "full_name": "devarent/backend-service-2026",
+      "html_url": "https://github.com/devarent/backend-service-2026",
+      "description": "Java 21 + Quarkus order service: PostgreSQL, Flyway, Redis, OpenAPI, integration tests, Docker and Kubernetes.",
+      "language": "Java",
+      "topics": [
+        "docker",
+        "flyway",
+        "java",
+        "kubernetes",
+        "maven",
+        "microservices",
+        "postgresql",
+        "quarkus",
+        "redis",
+        "rest-api"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 195,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:10:48Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml",
+        "release.yml"
+      ]
+    },
+    {
+      "name": "bigquery-lab",
+      "full_name": "devarent/bigquery-lab",
+      "html_url": "https://github.com/devarent/bigquery-lab",
+      "description": "Query BigQuery with SQL and run the same workflow against the open-source BigQuery emulator in Docker.",
+      "language": null,
+      "topics": [
+        "analytics",
+        "bigquery",
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "emulator",
+        "google-cloud",
+        "lab",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 5,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T05:58:43Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "cassandra-lab",
+      "full_name": "devarent/cassandra-lab",
+      "html_url": "https://github.com/devarent/cassandra-lab",
+      "description": "Run Apache Cassandra 5 in Docker, design a partition key, and practice CQL queries and clustering columns.",
+      "language": null,
+      "topics": [
+        "cassandra",
+        "cql",
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "lab",
+        "nosql",
+        "wide-column"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 5,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T05:51:46Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "chromadb-lab",
+      "full_name": "devarent/chromadb-lab",
+      "html_url": "https://github.com/devarent/chromadb-lab",
+      "description": "Run ChromaDB in Docker and practice collections, explicit embeddings, and similarity queries.",
+      "language": null,
+      "topics": [
+        "chromadb",
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "embeddings",
+        "lab",
+        "rag",
+        "vector-database"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 5,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T06:57:44Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "cnn",
+      "full_name": "devarent/cnn",
+      "html_url": "https://github.com/devarent/cnn",
+      "description": "Sistem Convolutional Neural Network terintegrasi sensor kamera dan database telemetri.",
+      "language": "HTML",
+      "topics": [
+        "cnn",
+        "computer-science",
+        "computer-vision",
+        "deep-learning",
+        "html",
+        "python"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 19555,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:14:03Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "cockroachdb-lab",
+      "full_name": "devarent/cockroachdb-lab",
+      "html_url": "https://github.com/devarent/cockroachdb-lab",
+      "description": "Run a single-node CockroachDB cluster in Docker, explore distributed SQL, and inspect ranges and execution plans.",
+      "language": null,
+      "topics": [
+        "cockroachdb",
+        "database",
+        "database-labs",
+        "devarent",
+        "distributed-sql",
+        "docker",
+        "lab",
+        "postgresql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 37,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:10:54Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "convolutional-neural-network",
+      "full_name": "devarent/convolutional-neural-network",
+      "html_url": "https://github.com/devarent/convolutional-neural-network",
+      "description": "Sistem Convolutional Neural Network terintegrasi sensor kamera dan database telemetri.",
+      "language": "HTML",
+      "topics": [
+        "cnn",
+        "computer-science",
+        "computer-vision",
+        "deep-learning",
+        "html",
+        "python"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 19563,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:14:07Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "credit-card-fraud",
+      "full_name": "devarent/credit-card-fraud",
+      "html_url": "https://github.com/devarent/credit-card-fraud",
+      "description": "Deteksi fraud kartu kredit dengan machine learning dan penanganan dataset imbalance.",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "classification",
+        "data-science",
+        "fraud-detection",
+        "jupyter-notebook",
+        "machine-learning",
+        "python"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 440,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:14:11Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "database-labs",
+      "full_name": "devarent/database-labs",
+      "html_url": "https://github.com/devarent/database-labs",
+      "description": "Index of 26 hands-on database labs: SQL, NoSQL, search, vector, graph, time-series, and streaming.",
+      "language": "Python",
+      "topics": [
+        "analytics",
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "index",
+        "labs",
+        "nosql",
+        "portfolio",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 415,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:08:24Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "docs-check.yml"
+      ]
+    },
+    {
+      "name": "database-labs-demo",
+      "full_name": "devarent/database-labs-demo",
+      "html_url": "https://github.com/devarent/database-labs-demo",
+      "description": "FastAPI + PostgreSQL 17 demo for 26 hands-on database labs, with real reads and writes and deploy configs.",
+      "language": "Python",
+      "topics": [
+        "database",
+        "database-labs",
+        "demo",
+        "devarent",
+        "docker",
+        "fastapi",
+        "flyio",
+        "portfolio",
+        "postgresql",
+        "python",
+        "render",
+        "sqlalchemy"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 288,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:47Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "databend-lab",
+      "full_name": "devarent/databend-lab",
+      "html_url": "https://github.com/devarent/databend-lab",
+      "description": "Run Databend in Docker and query it over the MySQL protocol or the HTTP SQL API.",
+      "language": null,
+      "topics": [
+        "database",
+        "database-labs",
+        "databend",
+        "devarent",
+        "docker",
+        "lab",
+        "mysql-protocol",
+        "olap",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 4,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T06:11:49Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "databricks-sql-lab",
+      "full_name": "devarent/databricks-sql-lab",
+      "html_url": "https://github.com/devarent/databricks-sql-lab",
+      "description": "Practice Databricks SQL on a serverless SQL warehouse: Delta tables, time travel, and a small medallion pipeline.",
+      "language": null,
+      "topics": [
+        "analytics",
+        "database",
+        "database-labs",
+        "databricks",
+        "delta-lake",
+        "devarent",
+        "lab",
+        "lakehouse",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 36,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:02Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": []
+    },
+    {
+      "name": "dbx",
+      "full_name": "devarent/dbx",
+      "html_url": "https://github.com/devarent/dbx",
+      "description": "Lightweight cross-platform database client supporting MySQL, PostgreSQL, SQLite, Redis, MongoDB, and more.",
+      "language": "Rust",
+      "topics": [
+        "bigquery",
+        "database",
+        "database-client",
+        "databricks",
+        "db2",
+        "docker",
+        "firebird",
+        "kafka",
+        "mariadb",
+        "mcp",
+        "mongodb",
+        "mysql",
+        "postgresql",
+        "redis",
+        "rust",
+        "snowflake",
+        "sql-server",
+        "sqlite",
+        "tauri",
+        "vue"
+      ],
+      "fork": true,
+      "archived": false,
+      "default_branch": "main",
+      "size": 251864,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:53:02Z",
+      "license_spdx": "Apache-2.0",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "1panel-appstore.yml",
+        "agents-release.yml",
+        "cache-keepalive.yml",
+        "cancel-superseded-ci.yml",
+        "ci.yml",
+        "contributors.yml",
+        "daily-beta-release.yml",
+        "database-environments.yml",
+        "docker-dev.yml",
+        "dockerhub-description.yml",
+        "docs.yml",
+        "fnos-package.yml",
+        "i18n-autofill.yml",
+        "issue-claim.yml",
+        "issue-database-label.yml",
+        "mcp-release.yml",
+        "notify.yml",
+        "plugin-cli-release.yml",
+        "plugin-dev-host.yml",
+        "plugin-release-reusable.yml",
+        "publish-packages.yml",
+        "pull-request-labels.yml",
+        "release.yml",
+        "rollback-docker-latest.yml",
+        "rollback-update-channel.yml",
+        "similar-issues-backfill.yml",
+        "similar-issues.yml",
+        "spam-comment-guard.yml",
+        "sqlserver2000-windows-user-test.yml",
+        "sync-changelog.yml",
+        "sync-cnb-release-assets.yml",
+        "sync-mirrors.yml",
+        "ui-preview.yml",
+        "update-nix-pnpm-hash.yml",
+        "vsign-operator-bootstrap.yml",
+        "windows-diagnostic.yml"
+      ]
+    },
+    {
+      "name": "devarent",
+      "full_name": "devarent/devarent",
+      "html_url": "https://github.com/devarent/devarent",
+      "description": "Profile and engineering portfolio - DevOps, Backend, QA, and AI projects built and documented in the open.",
+      "language": "Python",
+      "topics": [
+        "ai-engineering",
+        "cloud",
+        "git",
+        "github",
+        "markdown",
+        "portfolio",
+        "profile",
+        "python"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 7512,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-21T13:04:11Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "devhub",
+      "full_name": "devarent/devhub",
+      "html_url": "https://github.com/devarent/devhub",
+      "description": "DevHub (developers.databricks.com) - developer site for building on Databricks.",
+      "language": "TypeScript",
+      "topics": [
+        "data-engineering",
+        "databricks",
+        "developer",
+        "documentation",
+        "markdown"
+      ],
+      "fork": true,
+      "archived": false,
+      "default_branch": "main",
+      "size": 41221,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:53:06Z",
+      "license_spdx": "NOASSERTION",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "devhub-modernized",
+      "full_name": "devarent/devhub-modernized",
+      "html_url": "https://github.com/devarent/devhub-modernized",
+      "description": "Reference mirror of Databricks DevHub documentation and templates for data and AI developers.",
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "data-engineering",
+        "databricks",
+        "documentation",
+        "markdown",
+        "reference",
+        "typescript"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 31082,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:53:09Z",
+      "license_spdx": "NOASSERTION",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "devops-platform-2026",
+      "full_name": "devarent/devops-platform-2026",
+      "html_url": "https://github.com/devarent/devops-platform-2026",
+      "description": "Production-style AWS platform lab: VPC/EKS/RDS via Terraform, Helm, GitHub Actions, Prometheus/Grafana, Trivy, SLOs and runbooks.",
+      "language": "HCL",
+      "topics": [
+        "aws",
+        "devops",
+        "devsecops",
+        "eks",
+        "github-actions",
+        "grafana",
+        "helm",
+        "kubernetes",
+        "prometheus",
+        "terraform"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 98,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:07Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml",
+        "deploy.yml"
+      ]
+    },
+    {
+      "name": "elasticsearch-lab",
+      "full_name": "devarent/elasticsearch-lab",
+      "html_url": "https://github.com/devarent/elasticsearch-lab",
+      "description": "Run Elasticsearch 8 in Docker, create an index, bulk-load documents, and run full-text and filtered queries.",
+      "language": null,
+      "topics": [
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "elasticsearch",
+        "lab",
+        "lucene",
+        "search"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 5,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T05:38:50Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "email-spam-detector",
+      "full_name": "devarent/email-spam-detector",
+      "html_url": "https://github.com/devarent/email-spam-detector",
+      "description": "Deteksi spam email menggunakan machine learning.",
+      "language": "HTML",
+      "topics": [
+        "classification",
+        "html",
+        "machine-learning",
+        "nlp",
+        "python",
+        "scikit-learn",
+        "spam-detection"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 976,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:14:19Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "firebird-lab",
+      "full_name": "devarent/firebird-lab",
+      "html_url": "https://github.com/devarent/firebird-lab",
+      "description": "Run Firebird 5 in Docker, model a small sales schema, and practice SQL with isql and JDBC.",
+      "language": null,
+      "topics": [
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "firebird",
+        "lab",
+        "relational-database",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 36,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:13Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "hris-itk-laravel",
+      "full_name": "devarent/hris-itk-laravel",
+      "html_url": "https://github.com/devarent/hris-itk-laravel",
+      "description": "Aplikasi Web Manajemen Karyawan HRIS ITK Berbasis Laravel - absensi, penilaian, penggajian, dan laporan.",
+      "language": "Blade",
+      "topics": [
+        "hr-management",
+        "hris",
+        "laravel",
+        "mysql",
+        "php",
+        "tailwindcss",
+        "web-app"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 460,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:14:25Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "ibm-db2-lab",
+      "full_name": "devarent/ibm-db2-lab",
+      "html_url": "https://github.com/devarent/ibm-db2-lab",
+      "description": "Start IBM Db2 Community Edition in Docker, create a schema, and practice Db2 SQL and the command line processor.",
+      "language": null,
+      "topics": [
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "ibm-db2",
+        "lab",
+        "relational-database",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 38,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:17Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "influxdb-lab",
+      "full_name": "devarent/influxdb-lab",
+      "html_url": "https://github.com/devarent/influxdb-lab",
+      "description": "Run InfluxDB 2 in Docker, write line-protocol points, and query them with Flux.",
+      "language": null,
+      "topics": [
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "flux",
+        "influxdb",
+        "lab",
+        "monitoring",
+        "timeseries"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 5,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T06:05:01Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "intelligent-security-lab",
+      "full_name": "devarent/intelligent-security-lab",
+      "html_url": "https://github.com/devarent/intelligent-security-lab",
+      "description": "Riset dan prototipe keamanan berbasis sistem cerdas.",
+      "language": "Python",
+      "topics": [
+        "artificial-intelligence",
+        "cybersecurity",
+        "machine-learning",
+        "python",
+        "research",
+        "security"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 214,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:21Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "intersystems-iris-lab",
+      "full_name": "devarent/intersystems-iris-lab",
+      "html_url": "https://github.com/devarent/intersystems-iris-lab",
+      "description": "Run InterSystems IRIS Community Edition in Docker, connect over JDBC or the Management Portal, and practice SQL.",
+      "language": null,
+      "topics": [
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "intersystems-iris",
+        "jdbc",
+        "lab",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 37,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:25Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "jailbreak-root",
+      "full_name": "devarent/jailbreak-root",
+      "html_url": "https://github.com/devarent/jailbreak-root",
+      "description": "Eksperimen modifikasi dan optimalisasi perangkat Android.",
+      "language": "Batchfile",
+      "topics": [
+        "android",
+        "batchfile",
+        "experiments",
+        "modding",
+        "optimization",
+        "root"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 55,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:53:30Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "jdbc-lab",
+      "full_name": "devarent/jdbc-lab",
+      "html_url": "https://github.com/devarent/jdbc-lab",
+      "description": "Connect a plain Java 21 application to PostgreSQL and H2 with JDBC, then inspect metadata and run prepared statements.",
+      "language": "Java",
+      "topics": [
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "java",
+        "jdbc",
+        "lab",
+        "postgresql",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 40,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:31Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "k8s",
+      "full_name": "devarent/k8s",
+      "html_url": "https://github.com/devarent/k8s",
+      "description": "Manifest Kubernetes untuk deployment layanan HRIS, Laravel, dan aplikasi workspace.",
+      "language": null,
+      "topics": [
+        "containers",
+        "deployment",
+        "devops",
+        "k8s",
+        "kubernetes",
+        "yaml"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 63,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:14:31Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "lab-3-advanced-arithmetic",
+      "full_name": "devarent/lab-3-advanced-arithmetic",
+      "html_url": "https://github.com/devarent/lab-3-advanced-arithmetic",
+      "description": "Praktikum 3 - aritmatika dan instruksi lanjutan pada mikroprosesor.",
+      "language": "HTML",
+      "topics": [
+        "arithmetic",
+        "assembly",
+        "computer-science",
+        "html",
+        "microprocessor",
+        "praktikum"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 816,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:36Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "lambda-localstack-lab",
+      "full_name": "devarent/lambda-localstack-lab",
+      "html_url": "https://github.com/devarent/lambda-localstack-lab",
+      "description": "Panduan praktikum AWS Lambda tanpa akun AWS - LocalStack, Terraform, dan emulator lokal.",
+      "language": "Shell",
+      "topics": [
+        "aws",
+        "docker",
+        "lambda",
+        "localstack",
+        "praktikum",
+        "serverless",
+        "shell",
+        "terraform"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 168,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:40Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml",
+        "test.yml"
+      ]
+    },
+    {
+      "name": "laravel",
+      "full_name": "devarent/laravel",
+      "html_url": "https://github.com/devarent/laravel",
+      "description": "Laravel - a PHP framework with expressive, elegant syntax.",
+      "language": "Blade",
+      "topics": [
+        "backend",
+        "framework",
+        "laravel",
+        "php"
+      ],
+      "fork": true,
+      "archived": false,
+      "default_branch": "13.x",
+      "size": 11097,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:53:41Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml",
+        "dependabot-auto-merge.yml",
+        "issues.yml",
+        "pull-requests.yml",
+        "tests.yml",
+        "update-changelog.yml"
+      ]
+    },
+    {
+      "name": "laravel-modernized",
+      "full_name": "devarent/laravel-modernized",
+      "html_url": "https://github.com/devarent/laravel-modernized",
+      "description": "Reference mirror of the Laravel PHP framework; see laravel/laravel for the canonical upstream.",
+      "language": "Blade",
+      "topics": [
+        "backend",
+        "framework",
+        "laravel",
+        "php",
+        "reference"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "13.x",
+      "size": 8769,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:53:44Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "dependabot-auto-merge.yml",
+        "issues.yml",
+        "pull-requests.yml",
+        "tests.yml",
+        "update-changelog.yml"
+      ]
+    },
+    {
+      "name": "localstack-lambda-copy",
+      "full_name": "devarent/localstack-lambda-copy",
+      "html_url": "https://github.com/devarent/localstack-lambda-copy",
+      "description": "Praktikum AWS Lambda dengan LocalStack - terraform, emulator, dan skrip deploy serverless lokal.",
+      "language": "Shell",
+      "topics": [
+        "aws",
+        "docker",
+        "lambda",
+        "localstack",
+        "praktikum",
+        "serverless",
+        "shell",
+        "terraform"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 177,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:43Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml",
+        "test.yml"
+      ]
+    },
+    {
+      "name": "machine-learning-dicoding",
+      "full_name": "devarent/machine-learning-dicoding",
+      "html_url": "https://github.com/devarent/machine-learning-dicoding",
+      "description": "Notebook dan eksperimen machine learning dari kelas Dicoding.",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "data-science",
+        "dicoding",
+        "jupyter-notebook",
+        "machine-learning",
+        "python",
+        "tensorflow"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 13491,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:14:38Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "mariadb-practicum",
+      "full_name": "devarent/mariadb-practicum",
+      "html_url": "https://github.com/devarent/mariadb-practicum",
+      "description": "Hands-on MariaDB lab: schema design, indexes, stored procedures, triggers, backup/restore, Docker-based exercise.",
+      "language": "JavaScript",
+      "topics": [
+        "database",
+        "docker",
+        "javascript",
+        "mariadb",
+        "mysql",
+        "practicum",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 75,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:11:51Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "microprocessor-microcontroller-lab",
+      "full_name": "devarent/microprocessor-microcontroller-lab",
+      "html_url": "https://github.com/devarent/microprocessor-microcontroller-lab",
+      "description": "Materi dan praktikum mikroprosesor serta mikrokontroler.",
+      "language": null,
+      "topics": [
+        "assembly",
+        "electronics",
+        "hardware",
+        "microcontroller",
+        "microprocessor",
+        "praktikum"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 919,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:14:42Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "ml-pipeline-end-to-end",
+      "full_name": "devarent/ml-pipeline-end-to-end",
+      "html_url": "https://github.com/devarent/ml-pipeline-end-to-end",
+      "description": "Pipeline machine learning lengkap - preprocessing, EDA, training, evaluasi, dan deployment.",
+      "language": "Python",
+      "topics": [
+        "data-preprocessing",
+        "data-science",
+        "deployment",
+        "eda",
+        "machine-learning",
+        "model-training",
+        "python"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 2100,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:12:06Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "mongodb-practicum",
+      "full_name": "devarent/mongodb-practicum",
+      "html_url": "https://github.com/devarent/mongodb-practicum",
+      "description": "Hands-on MongoDB lab: document modeling, aggregation pipeline, indexes, Node.js CRUD exercise (local Docker).",
+      "language": "JavaScript",
+      "topics": [
+        "database",
+        "docker",
+        "javascript",
+        "mongodb",
+        "nodejs",
+        "nosql",
+        "practicum"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 71,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:12:10Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "neo4j-lab",
+      "full_name": "devarent/neo4j-lab",
+      "html_url": "https://github.com/devarent/neo4j-lab",
+      "description": "Run Neo4j 5 in Docker, load a small graph, and practice Cypher patterns, paths, and aggregations.",
+      "language": null,
+      "topics": [
+        "cypher",
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "graph-database",
+        "lab",
+        "neo4j"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 4,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T05:57:01Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "nextjs-aws-production",
+      "full_name": "devarent/nextjs-aws-production",
+      "html_url": "https://github.com/devarent/nextjs-aws-production",
+      "description": "Aplikasi Next.js siap produksi di AWS dengan PostgreSQL, Terraform, dan Docker.",
+      "language": "TypeScript",
+      "topics": [
+        "aws",
+        "docker",
+        "nextjs",
+        "nodejs",
+        "postgresql",
+        "production",
+        "terraform",
+        "typescript"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 172,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:12:16Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml",
+        "deploy.yml"
+      ]
+    },
+    {
+      "name": "nginx",
+      "full_name": "devarent/nginx",
+      "html_url": "https://github.com/devarent/nginx",
+      "description": "Konfigurasi Nginx untuk reverse proxy, TLS, dan layanan web lokal.",
+      "language": null,
+      "topics": [
+        "configuration",
+        "devops",
+        "nginx",
+        "reverse-proxy",
+        "tls",
+        "web-server"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 34,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:54:01Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "qa-automation-2026",
+      "full_name": "devarent/qa-automation-2026",
+      "html_url": "https://github.com/devarent/qa-automation-2026",
+      "description": "Digital-banking QA lab: Playwright E2E + API tests, SQL data-integrity checks, k6 load tests, CI reporting.",
+      "language": "JavaScript",
+      "topics": [
+        "api-testing",
+        "ci-cd",
+        "github-actions",
+        "javascript",
+        "k6",
+        "nodejs",
+        "playwright",
+        "qa",
+        "sql",
+        "test-automation"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 182,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:12:21Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "qdrant-lab",
+      "full_name": "devarent/qdrant-lab",
+      "html_url": "https://github.com/devarent/qdrant-lab",
+      "description": "Run Qdrant in Docker, create a collection, upsert vectors, and run similarity search over REST and Python.",
+      "language": null,
+      "topics": [
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "embeddings",
+        "lab",
+        "qdrant",
+        "similarity-search",
+        "vector-database"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 36,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:12:27Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "quantum-hybrid-diffusion-models",
+      "full_name": "devarent/quantum-hybrid-diffusion-models",
+      "html_url": "https://github.com/devarent/quantum-hybrid-diffusion-models",
+      "description": "Hybrid quantum-classical diffusion models for generative image synthesis experiments.",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "diffusion-models",
+        "generative-ai",
+        "jupyter-notebook",
+        "machine-learning",
+        "python",
+        "quantum-computing",
+        "research"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 22776,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:12:31Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "angular-ci.yml",
+        "ci.yml",
+        "codeql-analysis.yml",
+        "cpp-make.yml",
+        "docker-image.yml",
+        "laravel-ci.yml",
+        "python-ci.yml"
+      ]
+    },
+    {
+      "name": "quantum-hybrid-ml-databricks-snowflake",
+      "full_name": "devarent/quantum-hybrid-ml-databricks-snowflake",
+      "html_url": "https://github.com/devarent/quantum-hybrid-ml-databricks-snowflake",
+      "description": "Eksperimen hybrid quantum/classical machine learning dan integrasi Databricks-Snowflake.",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "databricks",
+        "jupyter-notebook",
+        "machine-learning",
+        "python",
+        "quantum-computing",
+        "research",
+        "snowflake"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 23154,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:12:35Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "angular-ci.yml",
+        "ci.yml",
+        "codeql-analysis.yml",
+        "cpp-make.yml",
+        "docker-image.yml",
+        "laravel-ci.yml",
+        "python-ci.yml"
+      ]
+    },
+    {
+      "name": "quantum-hybrid-ml-databricks-snowflake-modernized",
+      "full_name": "devarent/quantum-hybrid-ml-databricks-snowflake-modernized",
+      "html_url": "https://github.com/devarent/quantum-hybrid-ml-databricks-snowflake-modernized",
+      "description": "Reference mirror - hybrid quantum/classical ML dengan integrasi Databricks dan Snowflake.",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "databricks",
+        "jupyter-notebook",
+        "machine-learning",
+        "python",
+        "quantum-computing",
+        "reference",
+        "snowflake"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 23113,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:12:38Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "angular-ci.yml",
+        "ci.yml",
+        "codeql-analysis.yml",
+        "cpp-make.yml",
+        "docker-image.yml",
+        "laravel-ci.yml",
+        "python-ci.yml"
+      ]
+    },
+    {
+      "name": "react",
+      "full_name": "devarent/react",
+      "html_url": "https://github.com/devarent/react",
+      "description": "The library for web and native user interfaces.",
+      "language": "JavaScript",
+      "topics": [
+        "frontend",
+        "javascript",
+        "library",
+        "react",
+        "ui"
+      ],
+      "fork": true,
+      "archived": false,
+      "default_branch": "main",
+      "size": 135688,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:54:19Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml",
+        "compiler_discord_notify.yml",
+        "compiler_playground.yml",
+        "compiler_prereleases.yml",
+        "compiler_prereleases_manual.yml",
+        "compiler_prereleases_nightly.yml",
+        "compiler_rust.yml",
+        "compiler_rust_publish.yml",
+        "compiler_rust_version.yml",
+        "compiler_typescript.yml",
+        "devtools_cdt_mcp_publish.yml",
+        "devtools_discord_notify.yml",
+        "devtools_regression_tests.yml",
+        "runtime_build_and_test.yml",
+        "runtime_commit_artifacts.yml",
+        "runtime_discord_notify.yml",
+        "runtime_eslint_plugin_e2e.yml",
+        "runtime_fuzz_tests.yml",
+        "runtime_release_from_ci.yml",
+        "runtime_sizebot_comment.yml",
+        "shared_check_maintainer.yml",
+        "shared_cleanup_merged_branch_caches.yml",
+        "shared_cleanup_stale_branch_caches.yml",
+        "shared_close_direct_sync_branch_prs.yml",
+        "shared_label_core_team_prs.yml",
+        "shared_lint.yml",
+        "shared_stale.yml"
+      ]
+    },
+    {
+      "name": "react-modernized",
+      "full_name": "devarent/react-modernized",
+      "html_url": "https://github.com/devarent/react-modernized",
+      "description": "Reference mirror of React source code for learning and experimentation.",
+      "language": "JavaScript",
+      "topics": [
+        "frontend",
+        "javascript",
+        "learning",
+        "nodejs",
+        "react",
+        "reference"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 126496,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:54:23Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml",
+        "compiler_discord_notify.yml",
+        "compiler_playground.yml",
+        "compiler_prereleases.yml",
+        "compiler_prereleases_manual.yml",
+        "compiler_prereleases_nightly.yml",
+        "compiler_rust.yml",
+        "compiler_rust_publish.yml",
+        "compiler_rust_version.yml",
+        "compiler_typescript.yml",
+        "devtools_cdt_mcp_publish.yml",
+        "devtools_discord_notify.yml",
+        "devtools_regression_tests.yml",
+        "runtime_build_and_test.yml",
+        "runtime_commit_artifacts.yml",
+        "runtime_discord_notify.yml",
+        "runtime_eslint_plugin_e2e.yml",
+        "runtime_fuzz_tests.yml",
+        "runtime_release_from_ci.yml",
+        "runtime_sizebot_comment.yml",
+        "shared_check_maintainer.yml",
+        "shared_cleanup_merged_branch_caches.yml",
+        "shared_cleanup_stale_branch_caches.yml",
+        "shared_close_direct_sync_branch_prs.yml",
+        "shared_label_core_team_prs.yml",
+        "shared_lint.yml",
+        "shared_stale.yml"
+      ]
+    },
+    {
+      "name": "redis-lab",
+      "full_name": "devarent/redis-lab",
+      "html_url": "https://github.com/devarent/redis-lab",
+      "description": "Run Redis 8 in Docker and practice strings, hashes, lists, sorted sets, expiry, and a small Python client.",
+      "language": null,
+      "topics": [
+        "cache",
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "key-value",
+        "lab",
+        "nosql",
+        "redis"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 36,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:12:41Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "redshift-lab",
+      "full_name": "devarent/redshift-lab",
+      "html_url": "https://github.com/devarent/redshift-lab",
+      "description": "Practice Redshift SQL: distribution styles, sort keys, `COPY` from S3, `QUALIFY`, and query tuning.",
+      "language": null,
+      "topics": [
+        "analytics",
+        "aws",
+        "data-warehouse",
+        "database",
+        "database-labs",
+        "devarent",
+        "lab",
+        "redshift",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 5,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T05:53:28Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": []
+    },
+    {
+      "name": "repo-atlas-next",
+      "full_name": "devarent/repo-atlas-next",
+      "html_url": "https://github.com/devarent/repo-atlas-next",
+      "description": "Cloud & Data Control Center - Next.js 16, Tailwind v4, shadcn/Radix UI, 52 repos, 26 databases, Terraform + AWS EC2 CI/CD",
+      "language": "TypeScript",
+      "topics": [
+        "aws",
+        "databricks",
+        "devops",
+        "docker",
+        "kubernetes",
+        "nextjs",
+        "portfolio",
+        "radix-ui",
+        "react",
+        "shadcn-ui",
+        "tailwindcss",
+        "terraform",
+        "typescript"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 6459,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-21T15:24:15Z",
+      "license_spdx": null,
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [],
+      "gitignore": true,
+      "workflow_files": [
+        "deploy.yml"
+      ]
+    },
+    {
+      "name": "scripts",
+      "full_name": "devarent/scripts",
+      "html_url": "https://github.com/devarent/scripts",
+      "description": "Kumpulan skrip utilitas untuk backup, otomasi, dan administrasi workspace.",
+      "language": "Shell",
+      "topics": [
+        "automation",
+        "backup",
+        "powershell",
+        "scripts",
+        "shell",
+        "utilities"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 61,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:14:52Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "self-concept-reflection",
+      "full_name": "devarent/self-concept-reflection",
+      "html_url": "https://github.com/devarent/self-concept-reflection",
+      "description": "Dokumen refleksi dan konsep diri.",
+      "language": null,
+      "topics": [
+        "documentation",
+        "markdown",
+        "personal",
+        "portfolio",
+        "reflection"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 189,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:14:55Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "sensor-hewan",
+      "full_name": "devarent/sensor-hewan",
+      "html_url": "https://github.com/devarent/sensor-hewan",
+      "description": "Deteksi hewan berbasis CNN dengan sensor kamera dan database telemetri.",
+      "language": "HTML",
+      "topics": [
+        "cnn",
+        "computer-vision",
+        "deep-learning",
+        "html",
+        "python",
+        "pytorch",
+        "sensor",
+        "tensorflow"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 19556,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:14:58Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "snowflake-databricks",
+      "full_name": "devarent/snowflake-databricks",
+      "html_url": "https://github.com/devarent/snowflake-databricks",
+      "description": "Contoh dan catatan integrasi Snowflake dengan Databricks.",
+      "language": "HTML",
+      "topics": [
+        "analytics",
+        "data-engineering",
+        "databricks",
+        "html",
+        "snowflake",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 67,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:15:01Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "snowflake-lab",
+      "full_name": "devarent/snowflake-lab",
+      "html_url": "https://github.com/devarent/snowflake-lab",
+      "description": "Practice Snowflake SQL: warehouses, databases, stages, `COPY INTO`, `QUALIFY`, and time travel.",
+      "language": null,
+      "topics": [
+        "analytics",
+        "cloud",
+        "data-warehouse",
+        "database",
+        "database-labs",
+        "devarent",
+        "lab",
+        "snowflake",
+        "sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 35,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:12:50Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": []
+    },
+    {
+      "name": "sql-server-lab",
+      "full_name": "devarent/sql-server-lab",
+      "html_url": "https://github.com/devarent/sql-server-lab",
+      "description": "Run SQL Server 2022 Developer Edition in Docker and practice T-SQL with sqlcmd.",
+      "language": null,
+      "topics": [
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "lab",
+        "relational-database",
+        "sql-server",
+        "t-sql"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 37,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:12:53Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "tdengine-lab",
+      "full_name": "devarent/tdengine-lab",
+      "html_url": "https://github.com/devarent/tdengine-lab",
+      "description": "Run TDengine 3 in Docker and model devices with super tables, tags, and time-series queries.",
+      "language": null,
+      "topics": [
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "iot",
+        "lab",
+        "sql",
+        "tdengine",
+        "timeseries"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 4,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T06:47:50Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "teradata-lab",
+      "full_name": "devarent/teradata-lab",
+      "html_url": "https://github.com/devarent/teradata-lab",
+      "description": "Practice Teradata SQL: primary indexes, `COLLECT STATISTICS`, `QUALIFY`, and window functions.",
+      "language": null,
+      "topics": [
+        "analytics",
+        "data-warehouse",
+        "database",
+        "database-labs",
+        "devarent",
+        "lab",
+        "sql",
+        "teradata"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 4,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T06:51:55Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": []
+    },
+    {
+      "name": "terraform-databricks-sra",
+      "full_name": "devarent/terraform-databricks-sra",
+      "html_url": "https://github.com/devarent/terraform-databricks-sra",
+      "description": "Terraform Security Reference Architecture for deploying secure Databricks workspaces.",
+      "language": "HCL",
+      "topics": [
+        "cloud",
+        "databricks",
+        "infrastructure",
+        "security",
+        "terraform"
+      ],
+      "fork": true,
+      "archived": false,
+      "default_branch": "main",
+      "size": 4199,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:54:52Z",
+      "license_spdx": "NOASSERTION",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "aws-customizations-test.yml",
+        "aws-test.yml",
+        "azure-test.yml",
+        "docs-deploy.yml",
+        "docs-test-deploy.yml",
+        "terraform-ruw.yml",
+        "tfsec-pr-commenter.yml",
+        "workflow-mock-test.yml"
+      ]
+    },
+    {
+      "name": "terraform-databricks-sra-modernized",
+      "full_name": "devarent/terraform-databricks-sra-modernized",
+      "html_url": "https://github.com/devarent/terraform-databricks-sra-modernized",
+      "description": "Reference mirror of Databricks Terraform Security Reference Architecture for AWS, Azure, and GCP.",
+      "language": "HCL",
+      "topics": [
+        "aws",
+        "azure",
+        "cloud",
+        "databricks",
+        "gcp",
+        "reference",
+        "security",
+        "terraform"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 3855,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:54:55Z",
+      "license_spdx": "NOASSERTION",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "aws-customizations-test.yml",
+        "aws-test.yml",
+        "azure-test.yml",
+        "ci.yml",
+        "docs-deploy.yml",
+        "docs-test-deploy.yml",
+        "terraform-ruw.yml",
+        "tfsec-pr-commenter.yml",
+        "workflow-mock-test.yml"
+      ]
+    },
+    {
+      "name": "ui",
+      "full_name": "devarent/ui",
+      "html_url": "https://github.com/devarent/ui",
+      "description": "Beautifully designed, accessible components and a code distribution platform.",
+      "language": "TypeScript",
+      "topics": [
+        "components",
+        "design-system",
+        "react",
+        "shadcn-ui",
+        "tailwindcss",
+        "typescript"
+      ],
+      "fork": true,
+      "archived": false,
+      "default_branch": "main",
+      "size": 71399,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:54:58Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "browser-tests.yml",
+        "ci.yml",
+        "code-check.yml",
+        "issue-stale.yml",
+        "monitor-registries.yml",
+        "prerelease-comment.yml",
+        "release.yml",
+        "signed-commits-close.yml",
+        "signed-commits.yml",
+        "templates.yml",
+        "test.yml",
+        "validate-registries.yml"
+      ]
+    },
+    {
+      "name": "ui-modernized",
+      "full_name": "devarent/ui-modernized",
+      "html_url": "https://github.com/devarent/ui-modernized",
+      "description": "Reference mirror of shadcn/ui - customizable, accessible React components and UI registries.",
+      "language": "TypeScript",
+      "topics": [
+        "components",
+        "design-system",
+        "react",
+        "reference",
+        "shadcn-ui",
+        "tailwindcss",
+        "typescript"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 54350,
+      "open_issues_count": 55,
+      "pushed_at": "2026-11-20T04:55:00Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE.md"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "browser-tests.yml",
+        "code-check.yml",
+        "issue-stale.yml",
+        "prerelease-comment.yml",
+        "release.yml",
+        "signed-commits.yml",
+        "templates.yml",
+        "test.yml",
+        "validate-registries.yml"
+      ]
+    },
+    {
+      "name": "unit-testing-practice",
+      "full_name": "devarent/unit-testing-practice",
+      "html_url": "https://github.com/devarent/unit-testing-practice",
+      "description": "Latihan soal dan pengujian unit untuk praktik pengembangan perangkat lunak.",
+      "language": "JavaScript",
+      "topics": [
+        "javascript",
+        "nodejs",
+        "practice",
+        "quality-assurance",
+        "testing",
+        "unit-testing"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 201,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:13:01Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "uts-ec2-amazon-linux",
+      "full_name": "devarent/uts-ec2-amazon-linux",
+      "html_url": "https://github.com/devarent/uts-ec2-amazon-linux",
+      "description": "UTS Cloud Computing - web hosting di Amazon Linux EC2 dengan Docker, Terraform, Kubernetes, dan CI/CD.",
+      "language": "HTML",
+      "topics": [
+        "amazon-linux",
+        "aws",
+        "cicd",
+        "cloud-computing",
+        "docker",
+        "ec2",
+        "html",
+        "kubernetes",
+        "linux",
+        "terraform"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 2404,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:13:05Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml",
+        "deploy-ec2.yml",
+        "deploy-k8s.yml"
+      ]
+    },
+    {
+      "name": "vertica-lab",
+      "full_name": "devarent/vertica-lab",
+      "html_url": "https://github.com/devarent/vertica-lab",
+      "description": "Practice Vertica SQL: projections, segmentation, `COPY`, and a columnar query workflow.",
+      "language": null,
+      "topics": [
+        "analytics",
+        "columnar",
+        "data-warehouse",
+        "database",
+        "database-labs",
+        "devarent",
+        "lab",
+        "sql",
+        "vertica"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 4,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T06:54:20Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": []
+    },
+    {
+      "name": "victoriametrics-lab",
+      "full_name": "devarent/victoriametrics-lab",
+      "html_url": "https://github.com/devarent/victoriametrics-lab",
+      "description": "Run VictoriaMetrics in Docker, import Prometheus metrics, and query them with PromQL and vmui.",
+      "language": null,
+      "topics": [
+        "database",
+        "database-labs",
+        "devarent",
+        "docker",
+        "lab",
+        "monitoring",
+        "prometheus",
+        "timeseries",
+        "victoriametrics"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 5,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:05:33Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "compose-check.yml"
+      ]
+    },
+    {
+      "name": "week-4-programming-fundamentals",
+      "full_name": "devarent/week-4-programming-fundamentals",
+      "html_url": "https://github.com/devarent/week-4-programming-fundamentals",
+      "description": "Materi praktikum minggu ke-4 - pemrograman dasar dan sistem komputer.",
+      "language": "Python",
+      "topics": [
+        "cplusplus",
+        "education",
+        "materi",
+        "praktikum",
+        "programming",
+        "python"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 3558,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T07:13:09Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "wokwi",
+      "full_name": "devarent/wokwi",
+      "html_url": "https://github.com/devarent/wokwi",
+      "description": "Simulasi rangkaian Arduino dan ESP32 menggunakan Wokwi.",
+      "language": "C++",
+      "topics": [
+        "arduino",
+        "cpp",
+        "electronics",
+        "esp32",
+        "iot",
+        "simulation",
+        "wokwi"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "master",
+      "size": 34,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:55:10Z",
+      "license_spdx": "MIT",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci.yml"
+      ]
+    },
+    {
+      "name": "zerobus-sdk",
+      "full_name": "devarent/zerobus-sdk",
+      "html_url": "https://github.com/devarent/zerobus-sdk",
+      "description": "Databricks's Zerobus Ingest SDKs.",
+      "language": "Rust",
+      "topics": [
+        "cpp",
+        "data-ingestion",
+        "databricks",
+        "go",
+        "java",
+        "python",
+        "rust",
+        "sdk",
+        "typescript"
+      ],
+      "fork": true,
+      "archived": false,
+      "default_branch": "main",
+      "size": 414061,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-20T04:55:13Z",
+      "license_spdx": "Apache-2.0",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci-cpp.yml",
+        "ci-dotnet.yml",
+        "ci-go.yml",
+        "ci-java.yml",
+        "ci-purec.yml",
+        "ci-purego.yml",
+        "ci-python.yml",
+        "ci-rust.yml",
+        "ci-typescript.yml",
+        "issue-label.yml",
+        "push.yml",
+        "release-cpp.yml",
+        "release-dotnet.yml",
+        "release-ffi.yml",
+        "release-go.yml",
+        "release-java.yml",
+        "release-jni.yml",
+        "release-purego.yml",
+        "release-python.yml",
+        "release-typescript.yml"
+      ]
+    },
+    {
+      "name": "zerobus-sdk-modernized",
+      "full_name": "devarent/zerobus-sdk-modernized",
+      "html_url": "https://github.com/devarent/zerobus-sdk-modernized",
+      "description": "Databricks Zerobus Ingest SDK - reference mirror dengan contoh Rust, Python, Go, Java, TypeScript, dan C++.",
+      "language": "Rust",
+      "topics": [
+        "cpp",
+        "data-ingestion",
+        "databricks",
+        "golang",
+        "java",
+        "python",
+        "reference",
+        "rust",
+        "sdk",
+        "typescript"
+      ],
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "size": 85649,
+      "open_issues_count": 33,
+      "pushed_at": "2026-11-20T04:55:16Z",
+      "license_spdx": "Apache-2.0",
+      "errors": [],
+      "readme": "README.md",
+      "license_files": [
+        "LICENSE"
+      ],
+      "gitignore": true,
+      "workflow_files": [
+        "ci-cpp.yml",
+        "ci-dotnet.yml",
+        "ci-go.yml",
+        "ci-java.yml",
+        "ci-purec.yml",
+        "ci-purego.yml",
+        "ci-python.yml",
+        "ci-rust.yml",
+        "ci-typescript.yml",
+        "issue-label.yml",
+        "push.yml",
+        "release-cpp.yml",
+        "release-dotnet.yml",
+        "release-ffi.yml",
+        "release-go.yml",
+        "release-java.yml",
+        "release-jni.yml",
+        "release-purego.yml",
+        "release-python.yml",
+        "release-typescript.yml"
+      ]
+    }
+  ]
+}

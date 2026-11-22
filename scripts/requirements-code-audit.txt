@@ -1,0 +1,2 @@
+# Optional dependencies for scripts/code_audit.py (not needed for metadata audit).
+PyYAML==6.0.3

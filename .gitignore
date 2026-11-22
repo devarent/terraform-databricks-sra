@@ -61,11 +61,17 @@ terraform.rc
 # Env files
 .env*
 
-*.hcl
-
-# Include tflint configurations for CI workflows
-!**/.tflint.hcl
-!**/*.tftest.hcl
+# Modified in the devarent fork, 2026-11-22: do not hide arbitrary HCL source.
+# Preserve the existing local-only provider lock policy explicitly.
+.terraform.lock.hcl
+# Saved plans can contain sensitive values.
+*.tfplan
+tfplan
+# Local Python audit-tool bytecode, environments and downloaded source archives.
+__pycache__/
+*.py[cod]
+/.venv/
+/.cache/
 
 # Google Cloud Service Account Keys
 gcp/modules/workspace_deployment/fslakehouse-9b0f57986dbf.json
