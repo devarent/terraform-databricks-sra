@@ -1,3 +1,4 @@
+# Modified in the devarent fork, 2026-11-22: shared-change triggers and read-only CI defaults.
 # This workflow is used for testing the aws customizations. Each customization is a standalone root module, so each
 # is initialized, validated, and tested separately.
 
@@ -8,11 +9,22 @@ on:
       - 'aws/customizations/**'
       - 'aws/tf/.tflint.hcl'
       - '.github/workflows/aws-customizations-test.yml'
+      - '.github/workflows/terraform-ruw.yml'
+      - 'common/tests/**'
   pull_request:
     paths:
       - 'aws/customizations/**'
       - 'aws/tf/.tflint.hcl'
       - '.github/workflows/aws-customizations-test.yml'
+      - '.github/workflows/terraform-ruw.yml'
+      - 'common/tests/**'
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test-aws-customizations:
     strategy:

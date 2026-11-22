@@ -1,5 +1,14 @@
 <!-- Modified in the devarent fork, 2026-11-22: correct setup-terraform version input documentation. -->
 # Testing Workflows
+
+The devarent fork additionally runs offline HCL syntax/local-module contract checks in
+`maintenance-checks.yml` for Terraform and workflow changes. Install
+`scripts/requirements-terraform-checks.txt` and run `scripts/validate_terraform_sources.py`
+locally to reproduce. This is not a substitute for native Terraform provider validation.
+AWS/Azure/customization callers also watch the shared reusable workflow and common test
+fixtures. AWS/Azure remain filtered to mock test files; live integration tests are not
+selected automatically. See [the follow-up](../../docs/TERRAFORM-CI-FOLLOWUP.md).
+
 <!-- TOC -->
 * [Testing Workflows](#testing-workflows)
   * [Workflow features](#workflow-features)

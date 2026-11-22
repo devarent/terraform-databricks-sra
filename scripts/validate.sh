@@ -8,6 +8,11 @@ bash -n scripts/audit-repos.sh scripts/validate.sh
 git diff --check
 # Include newly staged files, which an unstaged diff cannot inspect.
 git diff --cached --check
+if "${PYTHON:-python3}" -c 'import hcl2' >/dev/null 2>&1; then
+  "${PYTHON:-python3}" scripts/validate_terraform_sources.py
+else
+  echo 'SKIP: HCL syntax/module contracts (install scripts/requirements-terraform-checks.txt).'
+fi
 if command -v terraform >/dev/null 2>&1; then
   terraform fmt -check -recursive
 else

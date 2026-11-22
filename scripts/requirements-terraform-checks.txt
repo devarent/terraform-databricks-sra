@@ -1,0 +1,2 @@
+# 7.3.1 rejects valid multiline conditional expressions; 8.2.0 accepts them.
+python-hcl2==8.2.0

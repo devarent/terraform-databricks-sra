@@ -1,3 +1,4 @@
+<!-- Modified in the devarent fork, 2026-11-22: correct example-root quickstart and safety guidance. -->
 # Security Reference Architecture Template
 
 # Introduction:
@@ -29,28 +30,39 @@ The following resources are created after the workspace creation:
 - **Cloud DNS**: [Private DNS zone](https://docs.databricks.com/gcp/en/security/network/classic/private-service-connect#step-9-configure-dns) are required for backend Private Service Connect (PSC) on GCP to ensure that traffic destined for internal services is resolved to the private IP addresses of the PSC endpoints within the VPC.
 
 
-# Getting Started:
+# Getting Started
 
-1. Clone this Repo 
+Terraform configuration is under `modules/` and `examples/`. The `gcp/` directory
+itself is not a Terraform root: running init/plan there will not deploy an example.
 
-2. Install [Terraform](https://developer.hashicorp.com/terraform/downloads)
+1. Choose an example for your environment:
+   - [Existing network / BYO workspace](examples/byo_gcp_workspace_deployment/README.md)
+   - [Simple workspace](examples/simple_workspace_deployment/readme.md)
+   - [End-to-end provisioning](<examples/end-to-end provisionning/README.md>)
+   - [Service account example](examples/service_account/README.md)
+2. Read that example's variables, provider constraints and authentication requirements.
+   Configure credentials securely; never commit service-account keys, state or real tfvars.
+3. Work from the selected example root. For example, from the repository root:
 
-3. Fill out `example.tfvars` and place in `gcp` directory
+   ```bash
+   cp gcp/examples/byo_gcp_workspace_deployment/terraform.tfvars.example \
+      gcp/examples/byo_gcp_workspace_deployment/terraform.tfvars
+   # Edit the local tfvars before planning; do not use placeholder IDs.
+   terraform -chdir=gcp/examples/byo_gcp_workspace_deployment init -backend=false
+   terraform -chdir=gcp/examples/byo_gcp_workspace_deployment validate
+   ```
 
-5. Change directoy into `gcp`
+   Initialization downloads providers and modules; `validate` is not a deployment.
+   For actual planning, configure the intended state backend and authentication first,
+   reinitialize as required, then review a plan and its cost/resource changes.
+4. Run `apply` only after explicit deployment approval. No plan or apply is performed
+   by the offline source checker in this repository.
 
-5. Run `terraform init`
+Some service-account examples generate a key by default. Review that setting and
+key/state storage before use; prefer the documented impersonation flow where applicable.
+Do not mistake a shell `export` in a Terraform child process for credentials being
+set in your current shell.
 
-6. Run `terraform validate`
-
-7. From `gcp` directory, run `terraform plan -var-file ../example.tfvars`
-
-8. Run `terraform apply -var-file ../example.tfvars`
-
-Note: If you are running the workspace module, please set DATABRICKS_GOOGLE_SERVICE_ACCOUNT environment variable with the Service Account email. Example :
-```
-export DATABRICKS_GOOGLE_SERVICE_ACCOUNT=<<Your GCP Service Account email>>
-```
 # Network Diagram
 
 

@@ -1,3 +1,4 @@
+# Modified in the devarent fork, 2026-11-22: shared-change triggers and read-only CI defaults.
 # This workflow is used for testing the aws terraform module.
 
 name: AWS Tests
@@ -6,10 +7,21 @@ on:
     paths:
       - 'aws/tf/**'
       - '.github/workflows/aws-test.yml'
+      - '.github/workflows/terraform-ruw.yml'
+      - 'common/tests/**'
   pull_request:
     paths:
       - 'aws/tf/**'
       - '.github/workflows/aws-test.yml'
+      - '.github/workflows/terraform-ruw.yml'
+      - 'common/tests/**'
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test-aws:
     uses: ./.github/workflows/terraform-ruw.yml

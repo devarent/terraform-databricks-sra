@@ -51,8 +51,9 @@ This project **does not** guarantee backward compatibility between versions; new
 3. Prepare local variables; never commit credentials, state or plans. Review a plan and its
    costs before any deployment. This maintenance work does not run `terraform apply`.
 
-GCP in this checkout contains a [guide](gcp/README.md), not a `gcp/tf` module.
-Do not assume every cloud has an identical layout or validation coverage.
+GCP uses [reusable modules](gcp/modules/) and [example roots](gcp/examples/), not a
+`gcp/tf` root. Follow the [GCP guide](gcp/README.md) from a chosen example directory.
+The earlier description of GCP as documentation-only was incorrect.
 
 ## Repository layout
 
@@ -61,7 +62,7 @@ Do not assume every cloud has an identical layout or validation coverage.
 | [aws/tf](aws/tf/) | AWS and GovCloud Terraform modules and tests |
 | [aws/customizations](aws/customizations/) | Optional integrations and customizations |
 | [azure/tf](azure/tf/) | Azure Terraform modules and tests |
-| [gcp](gcp/) | GCP guide and architecture image |
+| [gcp](gcp/) | GCP reusable Terraform modules, example roots, guide and diagram |
 | [common/tests](common/tests/) | Shared test fixtures |
 | [.workflow-mock](.workflow-mock/) | Reusable-workflow fixture |
 | [.github/workflows](.github/workflows/) | Existing Terraform and documentation CI |
@@ -71,16 +72,22 @@ Do not assume every cloud has an identical layout or validation coverage.
 ## Validation
 
 ```bash
-# Offline audit-tool tests, atlas consistency, local documentation links and diff checks
-bash scripts/validate.sh
+# Install optional parsers once; subsequent checks require no network/cloud access
+python3 -m venv .venv
+.venv/bin/pip install -r scripts/requirements-code-audit.txt -r scripts/requirements-terraform-checks.txt
+
+# Offline tests, HCL syntax/local-module contracts, documentation and diff checks
+PYTHON=.venv/bin/python bash scripts/validate.sh
 
 # Read-only inventory of every public repo (requires authenticated gh + Python 3)
 bash scripts/audit-repos.sh --write
 ```
 
 The validation script runs `terraform fmt -check -recursive` if Terraform is installed;
-otherwise it explicitly reports a skip. It does not run cloud deployment tests or certify
-infrastructure security. For module validation and mock tests, see
+otherwise it explicitly reports a skip. The Python HCL parser checks syntax and local
+module input/output contracts; it is **not** a substitute for `terraform validate`,
+provider schema checks, expression evaluation or a reviewed plan. It does not run cloud
+deployment tests or certify infrastructure security. See the [Terraform/CI follow-up](docs/TERRAFORM-CI-FOLLOWUP.md). For module validation and mock tests, see
 [the existing workflow guide](.github/workflows/README.md).
 
 Documentation build (use Node 20+ and Yarn Classic, as in the existing docs CI):

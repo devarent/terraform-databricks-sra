@@ -12,7 +12,10 @@ on:
       - 'README.md'
       - 'CONTRIBUTING.md'
       - '.gitignore'
-      - '.github/workflows/maintenance-checks.yml'
+      - '.github/workflows/**'
+      - '**/*.tf'
+      - '**/*.hcl'
+      - '.gitattributes'
   pull_request:
     paths:
       - 'scripts/**'
@@ -24,7 +27,10 @@ on:
       - 'README.md'
       - 'CONTRIBUTING.md'
       - '.gitignore'
-      - '.github/workflows/maintenance-checks.yml'
+      - '.github/workflows/**'
+      - '**/*.tf'
+      - '**/*.hcl'
+      - '.gitattributes'
 
 permissions:
   contents: read
@@ -44,9 +50,10 @@ jobs:
       - name: Install parser test dependency
         run: |
           python3 -m venv .venv
-          .venv/bin/pip install --disable-pip-version-check -r scripts/requirements-code-audit.txt
+          .venv/bin/pip install --disable-pip-version-check -r scripts/requirements-code-audit.txt -r scripts/requirements-terraform-checks.txt
       - name: Audit-tool regression tests and snapshot consistency (no remote API calls)
         run: |
           .venv/bin/python -m unittest discover -s scripts -p 'test_*.py' -v
+          .venv/bin/python scripts/validate_terraform_sources.py
           bash -n scripts/audit-repos.sh scripts/validate.sh
           git diff --check

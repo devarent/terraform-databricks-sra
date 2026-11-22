@@ -112,10 +112,12 @@ class RepositoryTests(unittest.TestCase):
     def test_maintenance_document_links_exist(self):
         # Check file targets in maintenance docs only; not external URLs or anchors.
         for name in ("README.md", "CONTRIBUTING.md", "docs/REPO-ATLAS.md", "docs/AUDIT-2026-11-22.md",
-                     "docs/CODE-AUDIT-2026-11-22.md", "docs/CODE-AUDIT-DATA.md", "docs/audit-patches/README.md"):
+                     "docs/CODE-AUDIT-2026-11-22.md", "docs/CODE-AUDIT-DATA.md", "docs/audit-patches/README.md",
+                     "docs/TERRAFORM-CI-FOLLOWUP.md", "gcp/README.md", "gcp/examples/service_account/README.md"):
             path = ROOT / name
             for link in re.findall(r"\[[^\]]*\]\(([^)]+)\)", path.read_text()):
-                url = urlsplit(link)
+                # Markdown allows angle-bracket destinations containing spaces.
+                url = urlsplit(link[1:-1] if link.startswith('<') and link.endswith('>') else link)
                 if url.scheme or url.netloc or not url.path:
                     continue
                 with self.subTest(file=name, link=link):
