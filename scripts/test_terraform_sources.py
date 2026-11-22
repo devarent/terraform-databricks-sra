@@ -95,6 +95,17 @@ class WorkflowContractTests(unittest.TestCase):
         # BaseLoader preserves the YAML key "on" instead of interpreting it as a YAML 1.1 boolean.
         return yaml.load((ROOT / '.github/workflows' / name).read_text(), Loader=yaml.BaseLoader)
 
+    def test_all_active_workflows_have_triggers_and_jobs(self):
+        for path in (ROOT / '.github/workflows').iterdir():
+            if path.suffix not in ('.yml', '.yaml'):
+                continue
+            with self.subTest(workflow=path.name):
+                doc = self.load(path.name)
+                self.assertIsInstance(doc, dict, 'Comment-only templates must live outside .github/workflows')
+                self.assertIn('on', doc)
+                self.assertIsInstance(doc.get('jobs'), dict)
+                self.assertTrue(doc['jobs'])
+
     def test_cloud_callers_retest_shared_changes(self):
         for name in ('aws-test.yml', 'azure-test.yml', 'aws-customizations-test.yml'):
             doc = self.load(name)

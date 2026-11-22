@@ -65,6 +65,15 @@ The root README and GCP quickstart now point to real example directories instead
 instructing users to initialize an empty `gcp/` root. A new service-account example
 README documents the retained input/output names and credential-generation risk.
 
+### 5. Remove a failing comment-only workflow from the active directory
+
+After push, GitHub reported `Maintenance checks` successful but also reported failed
+runs for `.github/workflows/docs-deploy.yml`, a file containing only comments and no
+workflow mapping. The preserved reference now lives at
+[.github/workflow-templates/docs-deploy.yml.disabled](../.github/workflow-templates/docs-deploy.yml.disabled).
+A regression test checks that every active workflow file has a mapping with triggers
+and jobs. GitHub Pages remains disabled; the old template needs review before reuse.
+
 ## Verification
 
 ```bash
@@ -76,7 +85,7 @@ PYTHON=.venv/bin/python bash scripts/validate.sh
 Results after implementation:
 
 - **273 / 273 HCL sources parsed; 35 local module calls checked; zero reported issues.**
-- **45 offline tests passed**, including 13 new source/workflow regression tests.
+- **46 offline tests passed**, including 14 new source/workflow regression tests.
 - Shell syntax, Python syntax, modified workflow YAML and Git whitespace checks passed.
 - Terraform CLI not available: fmt/native validate/test/plan were not run.
 - No cloud deployment, dependency upgrades in the application repos, remote fixes to
