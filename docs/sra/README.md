@@ -5,7 +5,7 @@ repository licensing remain unchanged. These instructions build locally, not dep
 
 ## Reproduce the documentation checks
 
-Use Node 22 (the installed Docusaurus 3.9.2 requires Node >=20) and Yarn Classic
+Use Node 22 (the installed Docusaurus 3.10.2 requires Node >=20) and Yarn Classic
 1.22.22. From the repository root:
 
 ```bash
@@ -24,9 +24,10 @@ script, image, stylesheet, favicon and selected preload assets. It does not fetc
 external URLs, inspect CSS URLs/srcset, or replace browser testing. Docusaurus also
 checks links and anchors during the build.
 
-The Yarn lockfile's download host was changed from `registry.yarnpkg.com` to
-`registry.npmjs.org`; locked versions, integrity hashes and dependency graphs were
-not upgraded. This allows installation where only the npm registry is reachable.
+The Yarn lockfile uses `registry.npmjs.org` rather than `registry.yarnpkg.com`.
+The initial host-only fix did not change package versions; the subsequent tested
+[dependency refresh](../DOCS-DEPENDENCY-REFRESH.md) does update the dependency graph.
+This allows installation where only the npm registry is reachable.
 Dependency lifecycle scripts are intentionally disabled, as verified for this build.
 The `packageManager` field documents the pinned Yarn version; CI installs it explicitly.
 
@@ -42,9 +43,14 @@ Local Node 22.22.3 / Yarn 1.22.22: frozen installation, typecheck and production
 passed; search indexed 21 documents. The generated 23 HTML files contain 171 checked
 local asset references with zero errors after the favicon fix.
 
-Installation still reports peer-dependency warnings. Build reports outdated
-Browserslist data and a deprecated `onBrokenMarkdownLinks` option. The locked root
-`@docusaurus/types` is 3.8.1 while core is 3.9.2; coordinated dependency/type updates
-and config migration are deferred rather than silently updating this graph. These
-warnings do not mean a security audit or dependency compatibility review has passed.
+The refreshed clean build reports neither the old Browserslist warning nor the
+`onBrokenMarkdownLinks` deprecation. All six direct Docusaurus packages are pinned
+to 3.10.2; the broken-Markdown-link policy now lives in `markdown.hooks` and remains
+`throw`. All direct dependencies use exact stable versions, including explicit React
+types; update the lockfile and rerun checks together when changing them.
+
+Installation still reports upstream peer-dependency warnings (react-loadable, acorn,
+Algolia/search-insights and the zoom plugin's theme peer). The build passing does not
+resolve these warnings or certify browser interactions/security. Major migrations
+(Tailwind 4, TypeScript 7, zoom 3, tailwind-merge 3 and Lucide 1) remain separate work.
 Do not commit `node_modules`, `.docusaurus`, or `build` outputs.

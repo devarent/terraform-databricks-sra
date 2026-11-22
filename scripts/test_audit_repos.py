@@ -113,7 +113,8 @@ class RepositoryTests(unittest.TestCase):
         # Check file targets in maintenance docs only; not external URLs or anchors.
         for name in ("README.md", "CONTRIBUTING.md", "docs/REPO-ATLAS.md", "docs/AUDIT-2026-11-22.md",
                      "docs/CODE-AUDIT-2026-11-22.md", "docs/CODE-AUDIT-DATA.md", "docs/audit-patches/README.md",
-                     "docs/TERRAFORM-CI-FOLLOWUP.md", "gcp/README.md", "gcp/examples/service_account/README.md"):
+                     "docs/TERRAFORM-CI-FOLLOWUP.md", "docs/DOCS-DEPENDENCY-REFRESH.md", "docs/sra/README.md",
+                     "gcp/README.md", "gcp/examples/service_account/README.md"):
             path = ROOT / name
             for link in re.findall(r"\[[^\]]*\]\(([^)]+)\)", path.read_text()):
                 # Markdown allows angle-bracket destinations containing spaces.

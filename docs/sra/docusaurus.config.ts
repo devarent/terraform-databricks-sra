@@ -1,4 +1,4 @@
-// Modified in the devarent fork, 2026-11-22: use a published static favicon asset.
+// Modified in the devarent fork, 2026-11-22: static favicon and Docusaurus 3.10 markdown hooks.
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -23,7 +23,6 @@ const config: Config = {
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'throw',
   onBrokenAnchors: 'throw',
 
@@ -56,6 +55,9 @@ const config: Config = {
 
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+    },
   },
 
   presets: [

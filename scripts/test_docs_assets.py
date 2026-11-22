@@ -63,6 +63,26 @@ class DocsAssetsTests(unittest.TestCase):
         self.assertEqual(result['local_references'], 1)
         self.assertEqual(len(result['errors']), 1)
 
+    def test_documentation_dependencies_are_aligned_and_pinned(self):
+        package = json.loads((ROOT / 'docs/sra/package.json').read_text())
+        deps = {**package['dependencies'], **package['devDependencies']}
+        for name, version in deps.items():
+            with self.subTest(package=name):
+                self.assertRegex(version, r'^\d+\.\d+\.\d+$')
+                if name.startswith('@docusaurus/'):
+                    self.assertEqual(version, deps['@docusaurus/core'])
+        self.assertEqual(deps['react'], deps['react-dom'])
+        react_major = deps['react'].split('.')[0]
+        for name in ('@types/react', '@types/react-dom'):
+            self.assertEqual(deps[name].split('.')[0], react_major)
+
+    def test_markdown_hook_keeps_broken_links_fatal(self):
+        config = (ROOT / 'docs/sra/docusaurus.config.ts').read_text()
+        self.assertIn("hooks: {\n      onBrokenMarkdownLinks: 'throw',\n    }", config)
+        self.assertNotIn("\n  onBrokenMarkdownLinks:", config)
+        self.assertIn("onBrokenLinks: 'throw'", config)
+        self.assertIn("onBrokenAnchors: 'throw'", config)
+
     def test_docs_runtime_and_favicon_contract(self):
         package = json.loads((ROOT / 'docs/sra/package.json').read_text())
         self.assertEqual(package['engines']['node'], '>=20.0')

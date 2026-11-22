@@ -132,5 +132,9 @@ also succeeded. These runs tested commit `c04c301`, **not this new increment**.
 They do not certify GCP, live deployment or the other 79 audited repositories.
 
 Reproduction commands, known nonfatal warnings and checker limitations are in
-[the documentation-site README](sra/README.md). Dependency upgrades, Docusaurus type
-alignment/deprecation migration and browser/runtime validation remain separate work.
+[the documentation-site README](sra/README.md). At that point dependency upgrades,
+Docusaurus type alignment/deprecation migration and browser/runtime validation were
+still pending. The subsequent [dependency refresh](DOCS-DEPENDENCY-REFRESH.md)
+updates the packages, aligns all six Docusaurus packages, migrates the Markdown hook
+and refreshes Browserslist data. Its clean install/typecheck/build passed and the
+local suite increased to 59 passing tests. Browser/runtime validation remains pending.
